@@ -1,0 +1,359 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- meta HTTP-EQUIV="pragma" CONTENT="no-cache" -->
+<style type="text/css">
+<!--
+tr,td,th { font-family: Verdana; font-size: 10pt }
+a { text-decoration: none; }
+a:hover { color:#DD0000; }
+/* span { font-size: 20pt; } */
+small { font-size:10pt }
+table {
+	border: 1px #FFFFEE solid;
+	border-spacing: 0px;
+	padding: 0px;
+	margin:0px;
+	border-collapse:collapse;
+}
+td {
+	border: 1px #FFFFEE solid;
+	border-spacing: 0px;
+	padding: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+input,select,textarea {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F8F8F8;
+	border: 1px solid #808080;
+}
+-->
+</style>
+<script language="JavaScript">
+function checkBrowser(){
+	this.ver=navigator.appVersion
+	this.dom=document.getElementById?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+	this.ie4=(document.all && !this.dom)?1:0;
+	this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+	return this
+}
+bw=new checkBrowser()
+
+function popup(vars) {
+  day = new Date();
+	id = day.getTime();
+	var newWindow;
+	var props = 'scrollBars=yes,resizable=no,toolbar=no,menubar=no,location=no,directories=no,width=400,height=360';
+	eval('popup'+id+' = window.open("admin.php?mode=admin&"+vars, "'+id+'", props);');
+}
+
+function more(div,div2,nest){
+	obj=bw.dom?document.getElementById(div).style:bw.ie4?document.all[div].style:bw.ns4?nest?document[nest].document[div]:document[div]:0;
+	obj2=bw.dom?document.getElementById(div2).style:bw.ie4?document.all[div2].style:bw.ns4?nest?document[nest].document[div2]:document[div2]:0;
+	if(obj.display=='') {
+		obj.display='none';
+		obj2.display='none';
+	} else {
+		obj.display='';
+		obj2.display='';
+	}
+}
+
+function swap(div,div2) {
+	var el = document.getElementById(div);
+	var el2 = document.getElementById(div2);
+	var tmp = el.style.display;
+	el.style.display = el2.style.display;
+	el2.style.display = tmp;
+}
+
+</script>
+<title>/j/ - Janitor &amp; Moderator Discussion</title>
+<link href="1_files/janichan.css" type="text/css" rel="stylesheet"></head>
+<body bgcolor="#FFFFEE" link="#0000EE" text="#800000" vlink="#0000EE">
+<div id="header"><span id="navtop">
+[<a href="http://boards.4chan.org/a/" title="Anime &amp; Manga">a</a> /
+<a href="http://boards.4chan.org/b/" title="Random">b</a> /
+<a href="http://boards.4chan.org/c/" title="Anime/Cute">c</a> /
+<a href="http://boards.4chan.org/d/" title="Hentai/Alternative">d</a> /
+<a href="http://boards.4chan.org/e/" title="Ecchi">e</a> /
+<a href="http://boards.4chan.org/f/" title="Flash">f</a> /
+<a href="http://boards.4chan.org/g/" title="Technology">g</a> /
+<a href="http://boards.4chan.org/gif/" title="Animated GIF">gif</a> /
+<a href="http://boards.4chan.org/h/" title="Hentai">h</a> /
+<a href="http://boards.4chan.org/hr/" title="High Resolution">hr</a> /
+<a href="http://boards.4chan.org/k/" title="Weapons">k</a> /
+<a href="http://boards.4chan.org/m/" title="Mecha">m</a> /
+<a href="http://boards.4chan.org/o/" title="Auto">o</a> /
+<a href="http://boards.4chan.org/p/" title="Photo">p</a> /
+<a href="http://boards.4chan.org/r/" title="Request">r</a> /
+<a href="http://boards.4chan.org/s/" title="Sexy Beautiful Women">s</a> /
+<a href="http://boards.4chan.org/t/" title="Torrents">t</a> /
+<a href="http://boards.4chan.org/u/" title="Yuri">u</a> /
+<a href="http://boards.4chan.org/v/" title="Video Games">v</a> /
+<a href="http://boards.4chan.org/w/" title="Anime/Wallpapers">w</a> /
+<a href="http://boards.4chan.org/wg/" title="Wallpapers/General">wg</a>]
+
+[<a href="http://boards.4chan.org/i/" title="Oekaki">i</a> /
+<a href="http://boards.4chan.org/ic/" title="Artwork/Critique">ic</a>]
+
+[<a href="http://boards.4chan.org/cm/" title="Cute/Male">cm</a> /
+<a href="http://boards.4chan.org/y/" title="Yaoi">y</a>]
+
+[<a href="http://boards.4chan.org/3/" title="3DCG">3</a> /
+<a href="http://boards.4chan.org/adv/" title="Advice">adv</a> /
+<a href="http://boards.4chan.org/an/" title="Animals &amp; Nature">an</a> /
+<a href="http://boards.4chan.org/cgl/" title="Cosplay &amp; EGL">cgl</a> /
+<a href="http://boards.4chan.org/ck/" title="Food &amp; Cooking">ck</a> /
+<a href="http://boards.4chan.org/co/" title="Comics &amp; Cartoons">co</a> /
+<a href="http://boards.4chan.org/fa/" title="Fashion">fa</a> /
+<a href="http://boards.4chan.org/fit/" title="Health &amp; Fitness">fit</a> /
+<a href="http://boards.4chan.org/int/" title="International">int</a> /
+<a href="http://boards.4chan.org/jp/" title="Otaku Culture">jp</a> /
+<a href="http://boards.4chan.org/lit/" title="Literature">lit</a> /
+<a href="http://boards.4chan.org/mu/" title="Music">mu</a> /
+<a href="http://boards.4chan.org/n/" title="Transportation">n</a> /
+<a href="http://boards.4chan.org/po/" title="Papercraft &amp; Origami">po</a> /
+<a href="http://boards.4chan.org/sci/" title="Science &amp; Math">sci</a> /
+<a href="http://boards.4chan.org/soc/" title="Social">soc</a> /
+<a href="http://boards.4chan.org/sp/" title="Sports">sp</a> /
+<a href="http://boards.4chan.org/tg/" title="Traditional Games">tg</a> /
+<a href="http://boards.4chan.org/toy/" title="Toys">toy</a> /
+<a href="http://boards.4chan.org/trv/" title="Travel">trv</a> /
+<a href="http://boards.4chan.org/tv/" title="Television &amp; Film">tv</a> /
+<a href="http://boards.4chan.org/vp/" title="Pokémon">vp</a> /
+<a href="http://boards.4chan.org/x/" title="Paranormal">x</a>]
+
+[<a href="http://rs.4chan.org/" title="Rapidshares">rs</a>]
+
+[<a href="http://status.4chan.org/" title="4chan Status">status</a> /
+<span style="font-size: 90%;"><a href="http://formspring.me/4chan" title="4chan Q&amp;A">?</a></span> /
+<span style="font-size: 90%;"><a href="http://twitter.com/4chan" title="4chan Twitter">@</a></span>]
+
+</span><span id="navtopr">[<a href="http://www.4chan.org/" target="_top">Home</a>]</span></div><br>
+
+<p align="center"><font color="#800000" size="5">
+<b><font style="font-size: 20pt;">/j/ - Janitor &amp; Moderator Discussion</font></b></font>
+</p><hr size="1" width="90%">
+<span style="float:left;">[<a href="http://boards.4chan.org/j/">Return</a>] [<a href="https://sys.4chan.org/j/imgboard.php">Update</a>] [<a href="https://sys.4chan.org/j/admin.php?admin=cleanup">Cleanup</a>]
+[<a href="https://sys.4chan.org/j/admin.php?admin=logout">Logout</a>] <!-- <span style="position: absolute; right: 10px;"><button value="Reload" onClick="location.href='admin.php'"></span> -->
+</span><select style="float:right;" onchange="var x=this.options[this.selectedIndex].value;x&amp;&amp;(window.location=x)"><option selected="selected" value="http://boards.4chan.org/3/admin.php">3</option>
+<option value="http://boards.4chan.org/a/admin.php">a</option>
+<option value="http://boards.4chan.org/adv/admin.php">adv</option>
+<option value="http://boards.4chan.org/an/admin.php">an</option>
+<option value="http://boards.4chan.org/b/admin.php">b</option>
+<option value="http://boards.4chan.org/c/admin.php">c</option>
+<option value="http://boards.4chan.org/cgl/admin.php">cgl</option>
+<option value="http://boards.4chan.org/ck/admin.php">ck</option>
+<option value="http://boards.4chan.org/cm/admin.php">cm</option>
+<option value="http://boards.4chan.org/co/admin.php">co</option>
+<option value="http://boards.4chan.org/d/admin.php">d</option>
+<option value="http://boards.4chan.org/e/admin.php">e</option>
+<option value="http://boards.4chan.org/f/admin.php">f</option>
+<option value="http://boards.4chan.org/fa/admin.php">fa</option>
+<option value="http://boards.4chan.org/fit/admin.php">fit</option>
+<option value="http://boards.4chan.org/g/admin.php">g</option>
+<option value="http://boards.4chan.org/gif/admin.php">gif</option>
+<option value="http://boards.4chan.org/h/admin.php">h</option>
+<option value="http://boards.4chan.org/hr/admin.php">hr</option>
+<option value="http://boards.4chan.org/i/admin.php">i</option>
+<option value="http://boards.4chan.org/ic/admin.php">ic</option>
+<option value="http://boards.4chan.org/int/admin.php">int</option>
+<option value="http://boards.4chan.org/jp/admin.php">jp</option>
+<option value="http://boards.4chan.org/k/admin.php">k</option>
+<option value="http://boards.4chan.org/lit/admin.php">lit</option>
+<option value="http://boards.4chan.org/m/admin.php">m</option>
+<option value="http://boards.4chan.org/mu/admin.php">mu</option>
+<option value="http://boards.4chan.org/n/admin.php">n</option>
+<option value="http://boards.4chan.org/o/admin.php">o</option>
+<option value="http://boards.4chan.org/p/admin.php">p</option>
+<option value="http://boards.4chan.org/po/admin.php">po</option>
+<option value="http://boards.4chan.org/r/admin.php">r</option>
+<option value="http://boards.4chan.org/s/admin.php">s</option>
+<option value="http://boards.4chan.org/sci/admin.php">sci</option>
+<option value="http://boards.4chan.org/soc/admin.php">soc</option>
+<option value="http://boards.4chan.org/sp/admin.php">sp</option>
+<option value="http://boards.4chan.org/t/admin.php">t</option>
+<option value="http://boards.4chan.org/tg/admin.php">tg</option>
+<option value="http://boards.4chan.org/toy/admin.php">toy</option>
+<option value="http://boards.4chan.org/trv/admin.php">trv</option>
+<option value="http://boards.4chan.org/tv/admin.php">tv</option>
+<option value="http://boards.4chan.org/u/admin.php">u</option>
+<option value="http://boards.4chan.org/v/admin.php">v</option>
+<option value="http://boards.4chan.org/vp/admin.php">vp</option>
+<option value="http://boards.4chan.org/w/admin.php">w</option>
+<option value="http://boards.4chan.org/wg/admin.php">wg</option>
+<option value="http://boards.4chan.org/x/admin.php">x</option>
+<option value="http://boards.4chan.org/y/admin.php">y</option>
+</select><br><table width="100%"><tbody><tr><th bgcolor="#E08000">
+<font color="#FFFFFF">Manager Mode</font>
+</th></tr></tbody></table>
+<form action="http://j.vyrd.net/j-admin/admin.php" method="POST">
+<input name="mode" value="admin" type="hidden">
+<input name="admin" value="del" type="hidden">
+<p>Go to ID(s): <input name="res" size="15" type="text">&nbsp;<input value="Go" type="submit"></p></form>
+<input onclick='location.search="?threadmode=1"' value="Group by thread" type="button"><center><p></p><form action="http://j.vyrd.net/j-admin/imgboard.php" method="POST"><input name="mode" value="admindel" type="hidden"><input name="pwd" value="DISHSIS" type="hidden"><input value="Delete" type="submit"> <input value="Reset" type="reset">[<input name="onlyimgdel" value="on" type="checkbox"><!--checked-->File Only]<p><table border="1" cellspacing="0">
+<tbody><tr align="center" bgcolor="#6080f6"><td width="1%">&nbsp;</td><td width="1%"><b>#</b></td><td width="1%"><b>Time</b></td><td width="10%"><b>Name</b></td><td width="15%"><b>Subject</b></td><td width="15%"><b>Comment</b></td><td width="40%"><b>Host</b></td><td width="5%">&nbsp;</td></tr>
+<tr bgcolor="#d0d0f0"><td><input id="fake1611" name="1611" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1611#1611" target="_blank">1611</a></td><td><small>05/01&nbsp;20:52</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1611" ondblclick='swap("full1611","short1611")' title="Double-click to show full comment">http://galleries.p...</small><small id="full1611" ondblclick='swap("full1611","short1611")' style="display:none;">http://galleries.payserve.com</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1611a','1611b');" type="button"></td>
+</tr>
+<tr id="1611a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1611b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1611');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1611');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1610" name="1610" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1610#1610" target="_blank">1610</a></td><td><small>05/01&nbsp;18:10</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1610" ondblclick='swap("full1610","short1610")' title="Double-click to show full comment">b.viewing.at</small><small id="full1610" ondblclick='swap("full1610","short1610")' style="display:none;">b.viewing.at</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1610a','1610b');" type="button"></td>
+</tr>
+<tr id="1610a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1610b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1610');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1610');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1609" name="1609" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1609#1609" target="_blank">1609</a></td><td><small>05/01&nbsp;08:35</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1609" ondblclick='swap("full1609","short1609")' title="Double-click to show full comment">realfiles.net</small><small id="full1609" ondblclick='swap("full1609","short1609")' style="display:none;">realfiles.net</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1609a','1609b');" type="button"></td>
+</tr>
+<tr id="1609a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1609b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1609');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1609');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1608" name="1608" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1608#1608" target="_blank">1608</a></td><td><small>04/30&nbsp;15:39</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1608" ondblclick='swap("full1608","short1608")' title="Double-click to show full comment">http://www.jailbay...</small><small id="full1608" ondblclick='swap("full1608","short1608")' style="display:none;">http://www.jailbayt.me</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1608a','1608b');" type="button"></td>
+</tr>
+<tr id="1608a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1608b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1608');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1608');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1607" name="1607" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1607#1607" target="_blank">1607</a></td><td><small>04/30&nbsp;01:59</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1607" ondblclick='swap("full1607","short1607")' title="Double-click to show full comment">http://www.celebri...</small><small id="full1607" ondblclick='swap("full1607","short1607")' style="display:none;">http://www.celebrityoopsi.com</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1607a','1607b');" type="button"></td>
+</tr>
+<tr id="1607a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1607b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1607');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1607');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1606" name="1606" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1606#1606" target="_blank">1606</a></td><td><small>04/30&nbsp;01:46</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1606" ondblclick='swap("full1606","short1606")' title="Double-click to show full comment">http://yep.it/Girl...</small><small id="full1606" ondblclick='swap("full1606","short1606")' style="display:none;">http://yep.it/GirlWore</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1606a','1606b');" type="button"></td>
+</tr>
+<tr id="1606a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1606b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1606');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1606');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1605" name="1605" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1605#1605" target="_blank">1605</a></td><td><small>04/30&nbsp;01:45</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1605" ondblclick='swap("full1605","short1605")' title="Double-click to show full comment">http://videoupload...</small><small id="full1605" ondblclick='swap("full1605","short1605")' style="display:none;">http://videoupload.eniac.at/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1605a','1605b');" type="button"></td>
+</tr>
+<tr id="1605a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1605b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1605');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1605');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1604" name="1604" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1604#1604" target="_blank">1604</a></td><td><small>04/30&nbsp;01:41</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1604" ondblclick='swap("full1604","short1604")' title="Double-click to show full comment">http://vktw.com/po...</small><small id="full1604" ondblclick='swap("full1604","short1604")' style="display:none;">http://vktw.com/pornmovie/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1604a','1604b');" type="button"></td>
+</tr>
+<tr id="1604a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1604b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1604');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1604');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1603" name="1603" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1603#1603" target="_blank">1603</a></td><td><small>04/29&nbsp;18:58</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1603" ondblclick='swap("full1603","short1603")' title="Double-click to show full comment">http://www.fotolog...</small><small id="full1603" ondblclick='swap("full1603","short1603")' style="display:none;">http://www.fotolog.com/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1603a','1603b');" type="button"></td>
+</tr>
+<tr id="1603a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1603b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1603');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1603');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1602" name="1602" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1602#1602" target="_blank">1602</a></td><td><small>04/29&nbsp;13:22</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1602" ondblclick='swap("full1602","short1602")' title="Double-click to show full comment">http://www.ultraso...</small><small id="full1602" ondblclick='swap("full1602","short1602")' style="display:none;">http://www.ultrasonline.com/ref</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1602a','1602b');" type="button"></td>
+</tr>
+<tr id="1602a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1602b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1602');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1602');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1601" name="1601" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1601#1601" target="_blank">1601</a></td><td><small>04/29&nbsp;13:21</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1601" ondblclick='swap("full1601","short1601")' title="Double-click to show full comment">http://www.HoneyPa...</small><small id="full1601" ondblclick='swap("full1601","short1601")' style="display:none;">http://www.HoneyPay.com</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1601a','1601b');" type="button"></td>
+</tr>
+<tr id="1601a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1601b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1601');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1601');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1600" name="1600" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1600#1600" target="_blank">1600</a></td><td><small>04/28&nbsp;01:56</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1600" ondblclick='swap("full1600","short1600")' title="Double-click to show full comment">http://galleries.p...</small><small id="full1600" ondblclick='swap("full1600","short1600")' style="display:none;">http://galleries.payserve.com/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1600a','1600b');" type="button"></td>
+</tr>
+<tr id="1600a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1600b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1600');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1600');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1599" name="1599" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1599#1599" target="_blank">1599</a></td><td><small>04/26&nbsp;18:32</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1599" ondblclick='swap("full1599","short1599")' title="Double-click to show full comment">http://farmlovers....</small><small id="full1599" ondblclick='swap("full1599","short1599")' style="display:none;">http://farmlovers.us.tt/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1599a','1599b');" type="button"></td>
+</tr>
+<tr id="1599a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1599b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1599');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1599');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1598" name="1598" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1598#1598" target="_blank">1598</a></td><td><small>04/26&nbsp;17:27</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1598" ondblclick='swap("full1598","short1598")' title="Double-click to show full comment">animalporntv</small><small id="full1598" ondblclick='swap("full1598","short1598")' style="display:none;">animalporntv</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1598a','1598b');" type="button"></td>
+</tr>
+<tr id="1598a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1598b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1598');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1598');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1597" name="1597" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1597#1597" target="_blank">1597</a></td><td><small>04/25&nbsp;16:04</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1597" ondblclick='swap("full1597","short1597")' title="Double-click to show full comment">http://www.youtube...</small><small id="full1597" ondblclick='swap("full1597","short1597")' style="display:none;">http://www.youtube.com/watch?v=jCDA1WPznss</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1597a','1597b');" type="button"></td>
+</tr>
+<tr id="1597a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1597b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1597');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1597');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1596" name="1596" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1596#1596" target="_blank">1596</a></td><td><small>04/25&nbsp;15:35</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1596" ondblclick='swap("full1596","short1596")' title="Double-click to show full comment">http://fileups.net</small><small id="full1596" ondblclick='swap("full1596","short1596")' style="display:none;">http://fileups.net</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1596a','1596b');" type="button"></td>
+</tr>
+<tr id="1596a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1596b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1596');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1596');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1595" name="1595" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1595#1595" target="_blank">1595</a></td><td><small>04/25&nbsp;06:16</small></td><td title="dr. stein"><b>dr. stein</b></td><td title=""></td><td><small id="short1595" ondblclick='swap("full1595","short1595")' title="Double-click to show full comment">Excellent! A lot o...</small><small id="full1595" ondblclick='swap("full1595","short1595")' style="display:none;">Excellent! A lot of these are features I've always wanted.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1595a','1595b');" type="button"></td>
+</tr>
+<tr id="1595a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1595b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1586">1586</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1595');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1595');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1594" name="1594" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1594#1594" target="_blank">1594</a></td><td><small>04/25&nbsp;00:15</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1594" ondblclick='swap("full1594","short1594")' title="Double-click to show full comment">New features added...</small><small id="full1594" ondblclick='swap("full1594","short1594")' style="display:none;">New features added. Click the link to install the new version.<br><br>MD5 Sums Field:<br>You
+ can now detect images as long as they're exactly the same. You can see 
+the MD5 sum of every image by checking the 'Show Sums' option.<br>Be 
+careful when you copy it, the whole string is needed and if it contains 
+the characters '/' or '+' it won't work. Just append a '\' before each 
+of these characters and it will work fine. Separate values with 
+semicolon as usual.<br><br>Alarm Mode:<br>It will reload the current 
+page every 5 seconds until it finds an offending post. It stops and 
+shows an alert showing how many posts were found.<br><br>Auto Delete:<br>Improved
+ and working properly. Still not recommended to run on its own unless 
+you are certain the filters are not getting false positives. Works best 
+if you're just filtering for anontalk spam, specific url, and images. No
+ chances of false positives that way.<br>It deletes whatever it finds 
+and waits whatever value is on the 'Delay' field before reloading. If 
+this mode is activated inside a thread, it will return to it.<br>Finally, this mode requires that you already have the global delete password on the password field.<br><br>You no longer need to set Manual Filtering and Show Stubs.<br><br>For
+ security reasons, the script doesn't include the global delete 
+password. You can still use the alarm mode if you wish for manual 
+confirmation before deleting everything. If you wish to save the 
+password for quicker reaction and use of Auto Delete, just make a new 
+thread posting the global delete password on the field. That should save
+ it.<br><br>That's pretty much it. Any questions, comments or requests for new features just contact me on #janiteam.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1594a','1594b');" type="button"></td>
+</tr>
+<tr id="1594a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3"><b>File (KB)</b></td><td colspan="3">&nbsp;</td></tr><tr id="1594b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="http://images.4chan.org/j/src/1272168951777.jpg" target="_blank">1272168951777.jpg</a> (<b>185.19KB</b>)</td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1594');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1594');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1593" name="1593" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1593#1593" target="_blank">1593</a></td><td><small>04/24&nbsp;19:10</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1593" ondblclick='swap("full1593","short1593")' title="Double-click to show full comment">http://www.epicdol...</small><small id="full1593" ondblclick='swap("full1593","short1593")' style="display:none;">http://www.epicdolls.net</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1593a','1593b');" type="button"></td>
+</tr>
+<tr id="1593a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1593b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1593');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1593');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1592" name="1592" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1592#1592" target="_blank">1592</a></td><td><small>04/23&nbsp;17:51</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1592" ondblclick='swap("full1592","short1592")' title="Double-click to show full comment">http://thebest.own...</small><small id="full1592" ondblclick='swap("full1592","short1592")' style="display:none;">http://thebest.owns.it</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1592a','1592b');" type="button"></td>
+</tr>
+<tr id="1592a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1592b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1592');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1592');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake1591" name="1591" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1591#1591" target="_blank">1591</a></td><td><small>04/22&nbsp;20:00</small></td><td title="kanria"><b>kanria</b></td><td title=""></td><td><small id="short1591" ondblclick='swap("full1591","short1591")' title="Double-click to show full comment">http://www.hacktha...</small><small id="full1591" ondblclick='swap("full1591","short1591")' style="display:none;">http://www.hackthat.net/df/ddos/100970/index.hack</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1591a','1591b');" type="button"></td>
+</tr>
+<tr id="1591a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1591b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1591');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1591');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1590" name="1590" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1590#1590" target="_blank">1590</a></td><td><small>04/20&nbsp;17:24</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1590" ondblclick='swap("full1590","short1590")' title="Double-click to show full comment">http://otrbasketba...</small><small id="full1590" ondblclick='swap("full1590","short1590")' style="display:none;">http://otrbasketball.com/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1590a','1590b');" type="button"></td>
+</tr>
+<tr id="1590a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1590b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1590');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1590');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1589" name="1589" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1589#1589" target="_blank">1589</a></td><td><small>04/20&nbsp;17:05</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1589" ondblclick='swap("full1589","short1589")' title="Double-click to show full comment">http://videoupload...</small><small id="full1589" ondblclick='swap("full1589","short1589")' style="display:none;">http://videoupload.eniac.at/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1589a','1589b');" type="button"></td>
+</tr>
+<tr id="1589a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1589b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1589');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1589');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1588" name="1588" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1588#1588" target="_blank">1588</a></td><td><small>04/20&nbsp;01:22</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1588" ondblclick='swap("full1588","short1588")' title="Double-click to show full comment">http://b.shows.it</small><small id="full1588" ondblclick='swap("full1588","short1588")' style="display:none;">http://b.shows.it</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1588a','1588b');" type="button"></td>
+</tr>
+<tr id="1588a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1588b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1588');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1588');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1587" name="1587" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1587#1587" target="_blank">1587</a></td><td><small>04/18&nbsp;19:49</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1587" ondblclick='swap("full1587","short1587")' title="Double-click to show full comment">Here's how it usua...</small><small id="full1587" ondblclick='swap("full1587","short1587")' style="display:none;">Here's how it usually looks with just a single filtered term.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1587a','1587b');" type="button"></td>
+</tr>
+<tr id="1587a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3"><b>File (KB)</b></td><td colspan="3">&nbsp;</td></tr><tr id="1587b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="http://images.4chan.org/j/src/1271634578449.jpg" target="_blank">1271634578449.jpg</a> (<b>203.01KB</b>)</td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1587');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1587');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1586" name="1586" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1586" target="_blank" style="font-weight: bold;">1586</a></td><td><small>04/18&nbsp;19:47</small></td><td title="AoC"><b>AoC</b></td><td title="4chan filter Janitor Edition">4chan fil...</td><td><small id="short1586" ondblclick='swap("full1586","short1586")' title="Double-click to show full comment">http://content.4ch...</small><small id="full1586" ondblclick='swap("full1586","short1586")' style="display:none;">http://content.4chan.org/tmp/janitor/4chan_filter_je.user.js<br><br>It's a modified version of the 4chan filter greasemonkey script allowing for easier cleaning.<br><br>Features:<br> Highlights offending posts and checks their checkbox for easy mass deletion.<br> Works for both threads and the Original Poster.<br> Everything else is like 4chan Filter.<br><br>Some notes.<br>Show Stubs and Manual Filtering must be checked for it to work properly.<br>AutoDelete
+ checkbox clicks the delete button for you, but it's replaced by a 
+confirmation dialog. Running completely automated is not recommended, 
+too many false positives.<br><br>As it is right now, it allows you to 
+check in a glance spam and other offending terms. Very useful for 
+dealing with spambots before it's added to the global filter.<br><br>A 
+final note on hijack imagespam, it usually has the same image size even 
+if the MD5 or name varies. Just putting the dimensions in the File field
+ allows to deal with hundreds of spam you'd otherwise would have to 
+select manually.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1586a','1586b');" type="button"></td>
+</tr>
+<tr id="1586a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3"><b>File (KB)</b></td><td colspan="3">&nbsp;</td></tr><tr id="1586b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="http://images.4chan.org/j/src/1271634468703.jpg" target="_blank">1271634468703.jpg</a> (<b>43.11KB</b>)</td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1586');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1586');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Thread options" onclick="popup('admin=opt&amp;id=1586');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Replies" onclick="location.href='?thread=1586'" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1585" name="1585" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1585#1585" target="_blank">1585</a></td><td><small>04/17&nbsp;22:01</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1585" ondblclick='swap("full1585","short1585")' title="Double-click to show full comment">http://b.burn.at/</small><small id="full1585" ondblclick='swap("full1585","short1585")' style="display:none;">http://b.burn.at/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1585a','1585b');" type="button"></td>
+</tr>
+<tr id="1585a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1585b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1585');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1585');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake1584" name="1584" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1584#1584" target="_blank">1584</a></td><td><small>04/17&nbsp;06:17</small></td><td title="HotShot"><b>HotShot</b></td><td title=""></td><td><small id="short1584" ondblclick='swap("full1584","short1584")' title="Double-click to show full comment">http://paybackmega...</small><small id="full1584" ondblclick='swap("full1584","short1584")' style="display:none;">http://paybackmegan.net</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1584a','1584b');" type="button"></td>
+</tr>
+<tr id="1584a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1584b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1584');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1584');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1583" name="1583" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1583#1583" target="_blank">1583</a></td><td><small>04/15&nbsp;22:36</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1583" ondblclick='swap("full1583","short1583")' title="Double-click to show full comment">http://www.faceboo...</small><small id="full1583" ondblclick='swap("full1583","short1583")' style="display:none;">http://www.facebook.com/pages/I-Cant-Believe-This-Video-Of-A-Man-URINATING-On-A-Female-Police-Office<br>r/119408454739430</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1583a','1583b');" type="button"></td>
+</tr>
+<tr id="1583a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1583b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1583');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1583');" type="button"></td></tr><tr bgcolor="#f0a0a0"><td><input id="fake1582" name="1582" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=1582#1582" target="_blank">1582</a></td><td><small>04/15&nbsp;12:17</small></td><td title="AoC"><b>AoC</b></td><td title=""></td><td><small id="short1582" ondblclick='swap("full1582","short1582")' title="Double-click to show full comment">http://yep.it/13ye...</small><small id="full1582" ondblclick='swap("full1582","short1582")' style="display:none;">http://yep.it/13yearol</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('1582a','1582b');" type="button"></td>
+</tr>
+<tr id="1582a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="1582b" style="display: none;" bgcolor="#f0a0a0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=1329">1329</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=1582');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=1582');" type="button"></td></tr></tbody></table></p><p><input value="Delete" type="submit"> <input value="Reset" type="reset"></p></form>[ Space used: <b>30436</b> KB ]<br><form action="http://j.vyrd.net/j-admin/admin.php" method="POST">
+<input name="mode" value="admin" type="hidden"><input name="admin" value="del" type="hidden"><input name="user" value="########" type="hidden"><input name="pass" value="########" type="hidden">
+<table border="0" cellpadding="2" cellspacing="0" width="%90"><tbody><tr><td>
+<input name="mode" value="admin" type="hidden"><input name="admin" value="del" type="hidden"><input name="user" value="########" type="hidden"><input name="pass" value="########" type="hidden">
+<input name="p" value="1" type="hidden"><input value="&lt;&lt;&lt;" type="submit"></td><td align="right"><form action="http://j.vyrd.net/j/admin.php" method="POST">
+<input name="mode" value="admin" type="hidden"><input name="admin" value="del" type="hidden"><input name="user" value="########" type="hidden"><input name="pass" value="########" type="hidden">
+<input name="p" value="3" type="hidden"><input value="&gt;&gt;&gt;" type="submit"><input name="threadmode" value="" type="hidden"></form></td></tr></tbody></table></form></center><div id="header"><span id="navtop">
+[<a href="http://boards.4chan.org/a/" title="Anime &amp; Manga">a</a> /
+<a href="http://boards.4chan.org/b/" title="Random">b</a> /
+<a href="http://boards.4chan.org/c/" title="Anime/Cute">c</a> /
+<a href="http://boards.4chan.org/d/" title="Hentai/Alternative">d</a> /
+<a href="http://boards.4chan.org/e/" title="Ecchi">e</a> /
+<a href="http://boards.4chan.org/f/" title="Flash">f</a> /
+<a href="http://boards.4chan.org/g/" title="Technology">g</a> /
+<a href="http://boards.4chan.org/gif/" title="Animated GIF">gif</a> /
+<a href="http://boards.4chan.org/h/" title="Hentai">h</a> /
+<a href="http://boards.4chan.org/hr/" title="High Resolution">hr</a> /
+<a href="http://boards.4chan.org/k/" title="Weapons">k</a> /
+<a href="http://boards.4chan.org/m/" title="Mecha">m</a> /
+<a href="http://boards.4chan.org/o/" title="Auto">o</a> /
+<a href="http://boards.4chan.org/p/" title="Photo">p</a> /
+<a href="http://boards.4chan.org/r/" title="Request">r</a> /
+<a href="http://boards.4chan.org/s/" title="Sexy Beautiful Women">s</a> /
+<a href="http://boards.4chan.org/t/" title="Torrents">t</a> /
+<a href="http://boards.4chan.org/u/" title="Yuri">u</a> /
+<a href="http://boards.4chan.org/v/" title="Video Games">v</a> /
+<a href="http://boards.4chan.org/w/" title="Anime/Wallpapers">w</a> /
+<a href="http://boards.4chan.org/wg/" title="Wallpapers/General">wg</a>]
+
+[<a href="http://boards.4chan.org/i/" title="Oekaki">i</a> /
+<a href="http://boards.4chan.org/ic/" title="Artwork/Critique">ic</a>]
+
+[<a href="http://boards.4chan.org/cm/" title="Cute/Male">cm</a> /
+<a href="http://boards.4chan.org/y/" title="Yaoi">y</a>]
+
+[<a href="http://boards.4chan.org/3/" title="3DCG">3</a> /
+<a href="http://boards.4chan.org/adv/" title="Advice">adv</a> /
+<a href="http://boards.4chan.org/an/" title="Animals &amp; Nature">an</a> /
+<a href="http://boards.4chan.org/cgl/" title="Cosplay &amp; EGL">cgl</a> /
+<a href="http://boards.4chan.org/ck/" title="Food &amp; Cooking">ck</a> /
+<a href="http://boards.4chan.org/co/" title="Comics &amp; Cartoons">co</a> /
+<a href="http://boards.4chan.org/fa/" title="Fashion">fa</a> /
+<a href="http://boards.4chan.org/fit/" title="Health &amp; Fitness">fit</a> /
+<a href="http://boards.4chan.org/int/" title="International">int</a> /
+<a href="http://boards.4chan.org/jp/" title="Otaku Culture">jp</a> /
+<a href="http://boards.4chan.org/lit/" title="Literature">lit</a> /
+<a href="http://boards.4chan.org/mu/" title="Music">mu</a> /
+<a href="http://boards.4chan.org/n/" title="Transportation">n</a> /
+<a href="http://boards.4chan.org/po/" title="Papercraft &amp; Origami">po</a> /
+<a href="http://boards.4chan.org/sci/" title="Science &amp; Math">sci</a> /
+<a href="http://boards.4chan.org/soc/" title="Social">soc</a> /
+<a href="http://boards.4chan.org/sp/" title="Sports">sp</a> /
+<a href="http://boards.4chan.org/tg/" title="Traditional Games">tg</a> /
+<a href="http://boards.4chan.org/toy/" title="Toys">toy</a> /
+<a href="http://boards.4chan.org/trv/" title="Travel">trv</a> /
+<a href="http://boards.4chan.org/tv/" title="Television &amp; Film">tv</a> /
+<a href="http://boards.4chan.org/vp/" title="Pokémon">vp</a> /
+<a href="http://boards.4chan.org/x/" title="Paranormal">x</a>]
+
+[<a href="http://rs.4chan.org/" title="Rapidshares">rs</a>]
+
+[<a href="http://status.4chan.org/" title="4chan Status">status</a> /
+<span style="font-size: 90%;"><a href="http://formspring.me/4chan" title="4chan Q&amp;A">?</a></span> /
+<span style="font-size: 90%;"><a href="http://twitter.com/4chan" title="4chan Twitter">@</a></span>]
+
+</span><span id="navtopr">[<a href="http://www.4chan.org/" target="_top">Home</a>]</span></div><br>
+</body></html>

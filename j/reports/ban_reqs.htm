@@ -1,0 +1,515 @@
+<html><head>
+<style type="text/css">
+<!--
+body {
+	background: #ffe;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+table {
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	padding: 5px;
+	border-collapse:collapse;
+}
+td,th {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	border-collapse:collapse;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+th { background: #fca; }
+
+.redbg { background: #ffe0e0; }
+.bluebg { background: #eef2ff; }
+
+input,select,.fakebutton {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F8F8F8;
+	border: 1px solid #808080;
+	vertical-align: middle;
+}
+select { vertical-align:top; }
+option,optgroup {
+	font-family: Verdana;
+	font-size: 9pt;
+}
+.fakebutton {
+	display:block;
+	height: 16px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	left:0px; right:0px;
+	text-decoration: none;
+	text-align: center;
+}
+* html .fakebutton { /* IE */
+	width:100%;
+	padding-bottom: 2px;
+}
+
+.actions, .actions td { border: none; }
+.actions td {
+	vertical-align: top;
+	padding-right: 5px;
+}
+
+
+.postblock {
+	background-color: #FCA;
+	font-weight: bold;
+	text-align: right;
+}
+-->
+</style>
+<title>reports</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230651"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230652"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230653"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230654"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230655"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230656"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230657"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230658"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230659"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230660"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230661"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230662"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230663"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230664"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230665"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230666"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230667"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230668"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230669"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230670"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230671"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230672"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230673"><div class="bd"></div></div><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230674"><div class="bd"></div></div><iframe style="position: absolute; visibility: visible; width: 10em; height: 10em; top: -104px; left: -104px; border-width: 0pt;" id="_yuiResizeMonitor" src="data:text/html;charset=utf-8,%3Chtml%3E%3Chead%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Ewindow.onresize%3Dfunction%28%29%7Bwindow.parent.YAHOO.widget.Module.textResizeEvent.fire%28%29%3B%7D%3C%2Fscript%3E%3C%2Fhead%3E%3Cbody%3E%3C%2Fbody%3E%3C%2Fhtml%3E"></iframe><div style="background-color: rgb(255, 255, 238); z-index: 2;" class="yui-module yui-overlay yui-tt" id="tippreview230675"><div class="bd"></div></div>
+<div><b style="float: left">Displaying ban requests 51-75 sorted by date submitted.</b>
+<select style="float:right; margin-right:10px;" onchange='window.location="?mode="+this.options[this.selectedIndex].value+"&amp;offset=50"'><optgroup label="mode"><option value="overview">main</option><option value="reporters">reporters</option><option value="ban_reqs" selected="selected">ban requests</option><option value="alertlist">board alerts</option><option value="stats">stats</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=ban_reqs&amp;offset=50&amp;board="+this.options[this.selectedIndex].value+""'><optgroup label="board"><option value="" selected="selected">all</option><option value="a">a</option><option value="adv">adv</option><option value="an">an</option><option value="b">b</option><option value="c">c</option><option value="cgl">cgl</option><option value="ck">ck</option><option value="cm">cm</option><option value="co">co</option><option value="d">d</option><option value="e">e</option><option value="f">f</option><option value="fa">fa</option><option value="fit">fit</option><option value="g">g</option><option value="gif">gif</option><option value="h">h</option><option value="hr">hr</option><option value="i">i</option><option value="ic">ic</option><option value="int">int</option><option value="jp">jp</option><option value="k">k</option><option value="lit">lit</option><option value="m">m</option><option value="mu">mu</option><option value="n">n</option><option value="o">o</option><option value="p">p</option><option value="po">po</option><option value="r">r</option><option value="s">s</option><option value="sci">sci</option><option value="soc">soc</option><option value="sp">sp</option><option value="t">t</option><option value="tg">tg</option><option value="toy">toy</option><option value="trv">trv</option><option value="tv">tv</option><option value="u">u</option><option value="v">v</option><option value="vp">vp</option><option value="w">w</option><option value="wg">wg</option><option value="x">x</option><option value="y">y</option><option value="3">3</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=ban_reqs&amp;offset=50&amp;sort="+this.options[this.selectedIndex].value+""'><optgroup label="sort"><option selected="selected" value="type">severity</option><option value="count"># of reports</option><option value="date">most recent report</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=ban_reqs&amp;offset=50&amp;hide="+this.options[this.selectedIndex].value+""'><optgroup label="hide"><option value="" selected="selected">none</option><option value="b">/b/ posts w/less than 15 rep.</option><option value="low">any posts w/less than 3 rep.</option></optgroup></select>&nbsp;
+
+</div><br><br>
+<!-- yui! -->
+<link rel="stylesheet" type="text/css" href="ban_reqs_files/container.css">
+<link rel="stylesheet" type="text/css" href="ban_reqs_files/post.css">
+<script type="text/javascript" src="ban_reqs_files/banreqs.js"></script>
+<center>
+<a href="https://www.4chan.org/reports/?mode=ban_reqs&amp;offset=25">&lt;&lt; Previous 25</a>&nbsp;&nbsp;<a href="https://www.4chan.org/reports/?mode=ban_reqs&amp;offset=75">Next 25 &gt;&gt;</a><style>form, input { margin:0; padding:0; } .fakebutton { display:block; width: 32px; }</style>
+<script type="text/javascript">
+function banOpen(id) {
+	var elt = document.getElementById("banButton"+id);
+	elt.disabled = true;
+	elt.title = "Ban dialog is open";
+	elt.noclick = elt.onclick;
+	elt.onclick = null;
+	elt.innerHTML = '...';
+
+}
+function banCancel(id) {
+	var elt = document.getElementById("banButton"+id);
+	elt.disabled = false;
+	elt.title = "";
+	elt.onclick = elt.noclick;
+	elt.noclick = null;
+	elt.innerHTML = ' & ';
+}
+
+function banCompleted(ids) {
+	var firstElt = document.getElementById("row" + ids[0]);
+	firstElt.className = "redbg";
+	for(i in ids) {
+		deleteRow(ids[i]);
+	}
+}
+
+function deleteRow(id) {
+	var elt = document.getElementById("row"+id);
+	var newtr = document.createElement('TR');
+	newtr.height = elt.clientHeight;
+	newtr.style.height = newtr.height+'px';
+	newtr.id = elt.id;
+	newtr.className = elt.className;
+	var childNodes = elt.childNodes;
+	for(i=0;i < childNodes.length;i++) {
+		newtr.appendChild(childNodes[i].cloneNode(false)); // non-deep clone
+	}
+	elt.parentNode.replaceChild(newtr, elt);
+	setTimeout(function(){shrink(newtr)},30);
+}
+
+function shrink(elt) {
+	if(elt.height > 4) {
+		elt.height -= 4;
+		elt.style.height = elt.height+'px';
+		setTimeout(function(){shrink(elt)},30);
+	}
+	else {
+		elt.parentNode.removeChild(elt);
+	}
+}
+
+function XHR() {
+	var http;
+	var progids = [
+		'MSXML2.XMLHTTP.3.0',
+		'MSXML2.XMLHTTP',
+		'Microsoft.XMLHTTP'
+		];
+
+		try	{
+			http = new XMLHttpRequest();
+		}
+		catch(e) {
+			for(var i=0; i < progids.length; ++i) {
+				try	{
+					http = new ActiveXObject(progids[i]);
+					break;
+				}
+				catch(e){}
+			}
+		}
+		finally	{
+			return http;
+		}
+}
+
+function clearBanRequest(id) {
+	var xhr = XHR();
+	xhr.open('POST', location, true);
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState==4){
+			if(xhr.status==200){
+				clearBanRequest_load(id,xhr.responseText);
+			}
+			else {
+				clearBanRequest_err(id,xhr.status);
+			}
+		}
+	};
+	xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+	xhr.send("action=clear_ban_request&redirect=%3F&id="+id);
+	clearBanRequest_start(id);
+}
+function clearBanRequest_start(id) {
+	var elt = document.getElementById("clearButton"+id);
+	elt.innerHTML = '...';
+	elt.noclick = elt.onclick;
+	elt.onclick = null;
+	elt.title = "Clearing...";
+}
+function clearBanRequest_load(id, response) {
+	var elt = document.getElementById("clearButton"+id);
+	if(!response.match(/Action completed/)) {
+		if(response.length > 500)
+			alert("Bad response when clearing ban request (too long to display)");
+		else
+			alert("Bad response\n"+response);
+	}
+	banCompleted([id]);
+}
+function clearBanRequest_err(id, status) {
+	var elt = document.getElementById("clearButton"+id);
+	elt.innerHTML = ' - ';
+	elt.onclick = elt.noclick;
+	elt.noclick = null;
+	elt.title = "";
+	alert("Error "+status+" when clearing ban request "+id);
+}
+
+function XHRTooltip(el, userConfig) {
+	XHRTooltip.superclass.constructor.call(this, el, userConfig);
+}
+YAHOO.lang.extend(XHRTooltip, YAHOO.widget.Tooltip);
+XHRTooltip.prototype.setBody = function(url) {
+	var super_setbody = XHRTooltip.superclass.setBody;
+	if(!url) {
+		super_setbody.call(this, "");
+		this.need_update = true;
+		return;
+	}
+	if(typeof(this.need_update) == 'undefined' || !this.need_update) {
+		return;
+	}
+	this.need_update = false;
+	super_setbody.call(this, "Loading...");
+	var xhr = XHR();
+	xhr.open("GET", url, true);
+	var this_saved = this;
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			if(xhr.status == 200) {
+				super_setbody.call(this_saved, xhr.responseText);
+			}
+			else {
+				super_setbody.call(this_saved, 'Error: '+xhr.status);
+				this_saved.need_update = true;
+			}
+		}
+	};
+	xhr.send(null);
+}
+</script>
+<table>
+<tbody><tr><th title="escalated">date</th><th>req. by</th><th>post</th><th>IP</th><th>reason</th><th>details</th><th>ban</th><th>clear</th></tr>
+<tr id="row230675">
+	<td align="center"><b>2011-08-28 23:16:51</b></td>
+	<td>dongfix</td>
+	<td id="preview230675" title="?mode=ban_req_details&amp;id=230675&amp;tooltip=1">/a/</td>
+	<td></td>
+	<td>Shitposting </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230675" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230675', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230675);return false;" class="fakebutton" id="banButton230675">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230675);return false;" class="fakebutton" id="clearButton230675">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230674">
+	<td align="center"><b>2011-08-28 23:16:32</b></td>
+	<td>dongfix</td>
+	<td id="preview230674" title="?mode=ban_req_details&amp;id=230674&amp;tooltip=1">/soc/7071069</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Underage, 17 years old / Child Nudity </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230674" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230674', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230674);return false;" class="fakebutton" id="banButton230674">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230674);return false;" class="fakebutton" id="clearButton230674">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230673">
+	<td align="center"><b>2011-08-28 23:16:13</b></td>
+	<td>dongfix</td>
+	<td id="preview230673" title="?mode=ban_req_details&amp;id=230673&amp;tooltip=1">/mu/19674674</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Underage, 15 years old </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230673" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230673', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230673);return false;" class="fakebutton" id="banButton230673">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230673);return false;" class="fakebutton" id="clearButton230673">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230672">
+	<td align="center"><b>2011-08-28 23:16:08</b></td>
+	<td>dongfix</td>
+	<td id="preview230672" title="?mode=ban_req_details&amp;id=230672&amp;tooltip=1">/int/4267989</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Ban evasion </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230672" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230672', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230672);return false;" class="fakebutton" id="banButton230672">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230672);return false;" class="fakebutton" id="clearButton230672">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230671">
+	<td align="center"><b>2011-08-28 23:16:05</b></td>
+	<td>yournamehere</td>
+	<td id="preview230671" title="?mode=ban_req_details&amp;id=230671&amp;tooltip=1">/sci/3643879</td>
+	<td>###### (###.###.###.###)</td>
+	<td>/new/shit </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230671" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230671', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230671);return false;" class="fakebutton" id="banButton230671">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230671);return false;" class="fakebutton" id="clearButton230671">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230670">
+	<td align="center"><b>2011-08-28 23:15:56</b></td>
+	<td>yournamehere</td>
+	<td id="preview230670" title="?mode=ban_req_details&amp;id=230670&amp;tooltip=1">/mu/19676124</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Underage Poster </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230670" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230670', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230670);return false;" class="fakebutton" id="banButton230670">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230670);return false;" class="fakebutton" id="clearButton230670">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230669">
+	<td align="center"><b>2011-08-28 23:15:42</b></td>
+	<td>yournamehere</td>
+	<td id="preview230669" title="?mode=ban_req_details&amp;id=230669&amp;tooltip=1">/int/4268305</td>
+	<td>###### (###.###.###.###)</td>
+	<td>/new/shit </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230669" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230669', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230669);return false;" class="fakebutton" id="banButton230669">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230669);return false;" class="fakebutton" id="clearButton230669">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230668">
+	<td align="center"><b>2011-08-28 23:14:45</b></td>
+	<td>yournamehere</td>
+	<td id="preview230668" title="?mode=ban_req_details&amp;id=230668&amp;tooltip=1">/a/53984098</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Shitposting </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230668" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230668', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230668);return false;" class="fakebutton" id="banButton230668">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230668);return false;" class="fakebutton" id="clearButton230668">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230667" class="redbg">
+	<td align="center"><b>2011-08-28 23:14:39</b></td>
+	<td>yournamehere</td>
+	<td id="preview230667" title="?mode=ban_req_details&amp;id=230667&amp;tooltip=1">/b/350438886</td>
+	<td>###### (###.###.###.###)</td>
+	<td>CP </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230667" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230667', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230667);return false;" class="fakebutton" id="banButton230667">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230667);return false;" class="fakebutton" id="clearButton230667">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230666">
+	<td align="center"><b>2011-08-28 23:14:21</b></td>
+	<td>yournamehere</td>
+	<td id="preview230666" title="?mode=ban_req_details&amp;id=230666&amp;tooltip=1">/sp/14667220</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Continuing to post after deletion / Complaining about moderation</td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230666" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230666', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230666);return false;" class="fakebutton" id="banButton230666">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230666);return false;" class="fakebutton" id="clearButton230666">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230665">
+	<td align="center"><b>2011-08-28 23:13:07</b></td>
+	<td>yournamehere</td>
+	<td id="preview230665" title="?mode=ban_req_details&amp;id=230665&amp;tooltip=1">/sp/14667223</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Continuing to post after deletion </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230665" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230665', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230665);return false;" class="fakebutton" id="banButton230665">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230665);return false;" class="fakebutton" id="clearButton230665">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230664">
+	<td align="center"><b>2011-08-28 23:12:54</b></td>
+	<td>yournamehere</td>
+	<td id="preview230664" title="?mode=ban_req_details&amp;id=230664&amp;tooltip=1">/sp/14664955</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Power ranking, off topic posting</td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230664" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230664', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230664);return false;" class="fakebutton" id="banButton230664">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230664);return false;" class="fakebutton" id="clearButton230664">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230663">
+	<td align="center"><b>2011-08-28 23:12:19</b></td>
+	<td>yournamehere</td>
+	<td id="preview230663" title="?mode=ban_req_details&amp;id=230663&amp;tooltip=1">/sp/14663437</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Europe vs USA </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230663" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230663', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230663);return false;" class="fakebutton" id="banButton230663">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230663);return false;" class="fakebutton" id="clearButton230663">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230662">
+	<td align="center"><b>2011-08-28 23:11:09</b></td>
+	<td>yournamehere</td>
+	<td id="preview230662" title="?mode=ban_req_details&amp;id=230662&amp;tooltip=1">/sp/14663547</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Europe vs USA </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230662" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230662', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230662);return false;" class="fakebutton" id="banButton230662">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230662);return false;" class="fakebutton" id="clearButton230662">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230661" class="redbg">
+	<td align="center"><b>2011-08-28 23:10:53</b></td>
+	<td>yournamehere</td>
+	<td id="preview230661" title="?mode=ban_req_details&amp;id=230661&amp;tooltip=1">/b/</td>
+	<td></td>
+	<td>CP </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230661" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230661', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230661);return false;" class="fakebutton" id="banButton230661">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230661);return false;" class="fakebutton" id="clearButton230661">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230660">
+	<td align="center"><b>2011-08-28 23:10:30</b></td>
+	<td>yournamehere</td>
+	<td id="preview230660" title="?mode=ban_req_details&amp;id=230660&amp;tooltip=1">/int/4267306</td>
+	<td>###### (###.###.###.###)</td>
+	<td>/new/shit </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230660" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230660', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230660);return false;" class="fakebutton" id="banButton230660">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230660);return false;" class="fakebutton" id="clearButton230660">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230659">
+	<td align="center"><b>2011-08-28 23:10:20</b></td>
+	<td>yournamehere</td>
+	<td id="preview230659" title="?mode=ban_req_details&amp;id=230659&amp;tooltip=1">/int/4268055</td>
+	<td>###### (###.###.###.###)</td>
+	<td>/new/shit </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230659" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230659', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230659);return false;" class="fakebutton" id="banButton230659">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230659);return false;" class="fakebutton" id="clearButton230659">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230658" class="redbg">
+	<td align="center"><b>2011-08-28 23:10:16</b></td>
+	<td>yournamehere</td>
+	<td id="preview230658" title="?mode=ban_req_details&amp;id=230658&amp;tooltip=1">/b/350440498</td>
+	<td>###### (###.###.###.###)</td>
+	<td>CP </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230658" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230658', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230658);return false;" class="fakebutton" id="banButton230658">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230658);return false;" class="fakebutton" id="clearButton230658">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230657">
+	<td align="center"><b>2011-08-28 23:06:46</b></td>
+	<td>inspredwood</td>
+	<td id="preview230657" title="?mode=ban_req_details&amp;id=230657&amp;tooltip=1">/co/29164928</td>
+	<td>###### (###.###.###.###)</td>
+	<td>pony porn</td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230657" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230657', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230657);return false;" class="fakebutton" id="banButton230657">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230657);return false;" class="fakebutton" id="clearButton230657">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230656">
+	<td align="center"><b>2011-08-28 23:01:49</b></td>
+	<td>dongfix</td>
+	<td id="preview230656" title="?mode=ban_req_details&amp;id=230656&amp;tooltip=1">/int/4267693</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Shitposting </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230656" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230656', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230656);return false;" class="fakebutton" id="banButton230656">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230656);return false;" class="fakebutton" id="clearButton230656">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230655" class="redbg">
+	<td align="center"><b>2011-08-28 23:01:44</b></td>
+	<td>dongfix</td>
+	<td id="preview230655" title="?mode=ban_req_details&amp;id=230655&amp;tooltip=1">/r/8894932</td>
+	<td>###.###.###.###</td>
+	<td>Requesting CP </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230655" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230655', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230655);return false;" class="fakebutton" id="banButton230655">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230655);return false;" class="fakebutton" id="clearButton230655">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230654" class="redbg">
+	<td align="center"><b>2011-08-28 23:00:35</b></td>
+	<td>dongfix</td>
+	<td id="preview230654" title="?mode=ban_req_details&amp;id=230654&amp;tooltip=1">/s/12352586</td>
+	<td>###### (###.###.###.###)</td>
+	<td>CP Spam Bot </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230654" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230654', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230654);return false;" class="fakebutton" id="banButton230654">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230654);return false;" class="fakebutton" id="clearButton230654">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230653">
+	<td align="center"><b>2011-08-28 22:59:49</b></td>
+	<td>dongfix</td>
+	<td id="preview230653" title="?mode=ban_req_details&amp;id=230653&amp;tooltip=1">/lit/2042234</td>
+	<td>###.###.###.###</td>
+	<td>Ban Evasion: Quentin </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230653" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230653', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230653);return false;" class="fakebutton" id="banButton230653">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230653);return false;" class="fakebutton" id="clearButton230653">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230652" class="redbg">
+	<td align="center"><b>2011-08-28 22:59:31</b></td>
+	<td>dongfix</td>
+	<td id="preview230652" title="?mode=ban_req_details&amp;id=230652&amp;tooltip=1">/b/350436288</td>
+	<td>###.###.###.###</td>
+	<td>Child Nudity </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230652" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230652', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230652);return false;" class="fakebutton" id="banButton230652">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230652);return false;" class="fakebutton" id="clearButton230652">&nbsp;×&nbsp;</a></td>
+</tr>
+<tr id="row230651" class="redbg">
+	<td align="center"><b>2011-08-28 22:59:21</b></td>
+	<td>dongfix</td>
+	<td id="preview230651" title="?mode=ban_req_details&amp;id=230651&amp;tooltip=1">/b/350378404</td>
+	<td>###### (###.###.###.###)</td>
+	<td>Child Model </td>
+	<td><a href="https://www.4chan.org/reports/?mode=ban_req_details&amp;id=230651" class="fakebutton"> + </a></td>
+	<td><a href="javascript:void(0)" onclick="open('ban.php?load_ban_request=230651', '_blank', 'location=no,menubar=no,toolbar=no,resizable=no,scrollbars=no,status=no,width=400,height=400');banOpen(230651);return false;" class="fakebutton" id="banButton230651">&nbsp;&amp;&nbsp;</a></td>
+	<td><a href="javascript:void(0)" onclick="clearBanRequest(230651);return false;" class="fakebutton" id="clearButton230651">&nbsp;×&nbsp;</a></td>
+</tr>
+</tbody></table>
+<script defer="defer">
+	window.onload = function() {
+		var rows = document.getElementsByTagName('td');
+		for(i=0;i < rows.length;i++) {
+			if(rows[i].id && rows[i].title) {
+				var xhrtooltip = new XHRTooltip("tip" + rows[i].id, {
+				context: rows[i],
+				autodismissdelay:32767,
+				iframe:false });
+				xhrtooltip.element.style.backgroundColor = '#ffe';
+			}
+		}
+	};
+</script>
+<a href="https://www.4chan.org/reports/?mode=ban_reqs&amp;offset=25">&lt;&lt; Previous 25</a>&nbsp;&nbsp;<a href="https://www.4chan.org/reports/?mode=ban_reqs&amp;offset=75">Next 25 &gt;&gt;</a><br><br><br><form action="ban_reqs.htm" method="POST">
+<input name="action" value="clear_old_ban_requests" type="hidden">
+<input name="redirect" value="?mode=ban_reqs" type="hidden">
+<input value="Clear old ban requests" type="submit">
+</form>
+</center>
+
+
+</body></html>

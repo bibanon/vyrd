@@ -1,0 +1,3 @@
+at least 1 illegal
+at least 1 spam, 0 illegal
+only rule vio

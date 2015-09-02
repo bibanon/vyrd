@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - uu</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=8</link>
+    <description><![CDATA[unidentified board]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:41:26 GMT</pubDate>
+    
+    <item>
+      <title>a mi a mi a mi a pathetic heap of secrets</title>
+      <link>http://i.vyrd.net/details.php?image_id=29</link>
+      <pubDate>Wed, 17 Jul 2013 16:33:38 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=8">uu</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/8/what-is-a-man-porky.png" length="10432" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=29</guid>
+    </item>
+    <item>
+      <title>4chan is a fucking nothing</title>
+      <link>http://i.vyrd.net/details.php?image_id=7</link>
+      <pubDate>Wed, 17 Jul 2013 00:00:30 GMT</pubDate>
+      <description><![CDATA[Plain truth:
+
+4chan is a *fucking nothing*. Just a bunch of tryhards trying to uphold what is nothing more than a pathetic second-hand appropriation of old goon culture. Hilarious thing -- most will deny any connection to goon culture and spew impotent hatred on them much like they do on everything else.
+
+When was the last time 4chan did anything remotely interesting? People don't even generate memes and in-jokes anymore, it's just a boiling mass of curmudgeons trying to one-up each other. Everyone's a fucking expert, everyone's a street~savvy armchair psychologist and philosopher, everyone has better taste in this or that, everyone has a bigger gun, everyone has a better computer, everyone has a better operating system, everyone was here apparently longer than 4chan existed. You get the picture. But when was the last time you ever actually did anything? Ever actually agreed on anything?
+
+No, I'm sorry, this is just pathetic. 4chan cannot even argue properly, it's nothing but greentext and costanza these days, appeals to authority, popularity and &quot;common sense&quot;. And it's really, really transparent it's nothing but oppressed losers who then perpetuate oppression on others so they can feel high and mighty for that brief period of time. Fucking go to /mu/ or /lit/ or /sci/ and tell me it's not that way. You're going to college, whoop-dee-fucking-doo man, that's even better than bread or hot water.
+
+Thank fuck that /r9k/ is back so I can read more poop stories, because I'm really fucking sick of people constantly trying to compete with me if I so much as utter a syllable.]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=8">uu</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/8/4chan-is-a-fucking-nothing.png" length="5151" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=7</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /co/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=10</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:32:10 GMT</pubDate>
+    
+    <item>
+      <title>clown rape is funny</title>
+      <link>http://i.vyrd.net/details.php?image_id=63</link>
+      <pubDate>Thu, 18 Jul 2013 12:46:15 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=10">/co/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/10/clown-rape.png" length="3835" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=63</guid>
+    </item>
+    <item>
+      <title>why did the chicken cross the road</title>
+      <link>http://i.vyrd.net/details.php?image_id=13</link>
+      <pubDate>Wed, 17 Jul 2013 00:22:06 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=10">/co/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/10/why-did-the-chicken-cross-the-road-full.jpeg" length="1408" type="image/jpeg" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=13</guid>
+    </item>
+    <item>
+      <title>autism singularity</title>
+      <link>http://i.vyrd.net/details.php?image_id=3</link>
+      <pubDate>Tue, 16 Jul 2013 23:10:48 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=10">/co/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/10/autism-singularity.png" length="1776" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=3</guid>
+    </item>
+
+  </channel>
+</rss>

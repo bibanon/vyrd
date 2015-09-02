@@ -1,0 +1,144 @@
+body {
+  font-size:12pt;
+  background:#FFFF00;
+  color:#00FFFF;
+  background-image: url('yellow00.gif');
+}
+a {
+  background:inherit;
+  color:#0000EE;
+  font-family:serif;
+}
+a:visited {
+  background:inherit;
+  color:#0000EE;
+  font-family:serif;
+}
+a:hover {
+  color:#DD0000;
+  background:inherit;
+  font-family:serif;
+}
+a.quotelink {
+  background:inherit;
+  color:#000080;
+  font-family:serif;
+}
+.logo {
+  clear:both;
+  text-align:center;
+  background:inherit;
+  font-size:24pt;
+  color:#00FFFF;
+  width:100%;
+}
+.postarea {
+  background:inherit;
+}
+.rules {
+  font-size:10px;
+  font-family:sans-serif;
+}
+.postblock {
+  background:#FF0000;
+  color:#00FFFF;
+  font-weight:800;
+}
+.footer {
+  text-align:center;
+  font-size:12px;
+  font-family:serif;
+}
+.unkfunc {
+	background:inert;
+	color:#789922;
+}
+.filesize {
+	font-size:16px;
+	font-family:serif;
+	text-decoration:none;
+}
+.filetitle {
+	background:inherit;
+	font-size:18px;
+	font-family:serif;
+	color:#00FFFF;
+	font-weight:800;
+}
+.postername {
+	background:inherit;
+	font-size:16px;
+	font-family:serif;
+	color:#00FFFF;
+	font-weight:800;
+}
+.postertrip {
+	background:inherit;
+	font-size:16px;
+	font-family:serif;
+	color:#00FFFF;
+}
+.oldpost {
+	background:inherit;
+  font-family:serif;
+  color:#f00000;
+  font-weight:800;
+}
+.omittedposts {
+	background:inherit;
+  color:#707070;
+}
+.reply {
+	background:#FF0000;
+	color:#00FFFF;
+	font-family:serif;
+}
+.replyhl {
+	background:#FF0000;
+	color:#00FFFF;
+	font-family:serif;
+}
+.doubledash {
+ 	vertical-align:top;
+	clear:both;
+	float:left;
+}
+.replytitle {
+	background:inherit;
+	font-size:18px;
+	font-family:serif;
+  color:#00FFFF;
+  font-weight:800;
+}
+.commentpostername {
+	background:inherit;
+  font-size:16px;
+  font-family:serif;
+  color:#00FFFF;
+  font-weight:800;
+}
+a.quotejs:active,a.quotejs:link,a.quotejs:visited {
+  color:#00FFFF;
+	text-decoration: none;
+}
+a.quotejs:hover {
+  font-weight:bold;
+}
+.tn_thread {
+  width: 200px;
+  height: 100px;
+  margin: 0px 20px 20px 20px;
+  float: left;
+  background: #eed;
+  border: #ea8 1px solid;
+  text-align: center
+}
+.tn_reply {
+  width: 100px;
+  height: 100px;
+  margin: 0px 20px 20px 20px;
+  float: left;
+  background: #eed;
+  border: #ea8 1px solid;
+  text-align: center
+}

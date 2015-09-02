@@ -1,0 +1,11 @@
+count.htm       https://www.4chan.org/reports/?mode=count&since=0
+reports.htm     https://www.4chan.org/reports/
+overview2.htm   https://www.4chan.org/reports/?mode=overview&offset=50
+details.htm     https://www.4chan.org/reports/?mode=details&board=g&no=19700857
+repdetails.htm  https://www.4chan.org/reports/?mode=repdetails&ip=######
+reporters.htm   https://www.4chan.org/reports/?mode=reporters&offset=50
+ban_req.htm     https://www.4chan.org/reports/?mode=ban_reqs&offset=50
+alertlist.htm   https://www.4chan.org/reports/?mode=alertlist&offset=0
+stats.htm       https://www.4chan.org/reports/?mode=stats&offset=0
+---             https://www.4chan.org/reports/?mode=alert&board=t
+alertlist2.htm  https://www.4chan.org/reports/?mode=alertlist

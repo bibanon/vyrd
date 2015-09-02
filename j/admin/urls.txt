@@ -1,0 +1,7 @@
+admin-board.htm         https://sys.4chan.org/g/admin.php
+admin-thread.htm        https://sys.4chan.org/g/admin.php?res=19700857
+cleanup.htm             https://sys.4chan.org/g/admin.php?admin=cleanup
+ip.htm                  https://sys.4chan.org/g/admin.php?ip=######
+options.htm             https://sys.4chan.org/g/admin.php?mode=admin&admin=opt&id=19700857
+threadmode.htm          https://sys.4chan.org/b/admin.php?threadmode=1
+ban.htm                 https://sys.4chan.org/k/admin.php?mode=admin&admin=ban&id=9625786

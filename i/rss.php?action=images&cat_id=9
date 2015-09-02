@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /y/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=9</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:41:22 GMT</pubDate>
+    
+    <item>
+      <title>breadporn</title>
+      <link>http://i.vyrd.net/details.php?image_id=12</link>
+      <pubDate>Wed, 17 Jul 2013 00:18:40 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=9">/y/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/9/y-bread.jpg" length="1643" type="image/jpeg" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=12</guid>
+    </item>
+
+  </channel>
+</rss>

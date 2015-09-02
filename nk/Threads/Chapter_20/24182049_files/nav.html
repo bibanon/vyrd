@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>4chan Navigation</title>
+
+<style type="text/css">
+body { font-family: sans-serif; font-size: 75%; background: #ffe }
+a { text-decoration: none; color: #550 }
+h1,h2 { margin: 0px; background: #fca }
+h1 { font-size: 150% }
+h2 { font-size: 100%; margin-top: 1em }
+.hl { font-style: italic }
+.plus { float: right; font-size: 8px; font-weight: normal; padding: 1px 4px 2px 4px; margin: 0px 0px; background: #eb9; color: #000; border: 1px solid #da8; cursor: hand; cursor: pointer }
+.plus:hover { background: #da8; border: 1px solid #c97 }
+ul { list-style: none; padding-left: 0px; margin: 0px }
+li { margin: 0px }
+li:hover { background: #fec; }
+li a { display: block; width: 100%; }
+</style>
+<script type="text/javascript">
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+
+function toggle(button,area) {
+	var tog=document.getElementById(area);
+	if(tog.style.display)	{
+		tog.style.display="";
+	}	else {
+		tog.style.display="none";
+	}
+	button.innerHTML=(tog.style.display)?'+':'&minus;';
+	createCookie('nav_show_'+area, tog.style.display?'0':'1', 365);
+}
+</script></head><body>
+<h1>4chan</h1>
+<ul>
+<li><a href="http://www.4chan.org/" target="_top">Front Page</a></li>
+<li><a href="http://www.4chan.org/nav.php?frames=no">[Remove Frames]</a></li>
+<li><a href="http://www.4chan.org/nav.php?dirs=yes">[Show Directories]</a></li>
+<li><a href="http://www.4chan.org/nav.php?wsonly=yes">[Show Worksafe Only]</a></li>
+ 
+</ul>
+<h2><span class="plus" onclick="toggle(this,'dis');" title="Click to show/hide">+</span>Text Boards</h2>
+<div id="dis" style="display: none;">
+<ul><li><a href="http://dis.4chan.org/lounge/" target="main">Lounge</a></li>
+<li><a href="http://dis.4chan.org/vip/" target="main">News for VIP</a></li>
+<li><a href="http://dis.4chan.org/newnew/" target="main">World News</a></li>
+<li><a href="http://dis.4chan.org/newpol/" target="main">Politics</a></li>
+<li><a href="http://dis.4chan.org/lang/" target="main">Foreign Language</a></li>
+<li><a href="http://dis.4chan.org/sci/" target="main">Science &amp; Math</a></li>
+<li><a href="http://dis.4chan.org/tech/" target="main">Technology</a></li>
+<li><a href="http://dis.4chan.org/food/" target="main">Food</a></li>
+<li><a href="http://dis.4chan.org/sports/" target="main">Sports</a></li>
+<li><a href="http://dis.4chan.org/comp/" target="main">Computers</a></li>
+<li><a href="http://dis.4chan.org/prog/" target="main">Programming</a></li>
+<li><a href="http://dis.4chan.org/img/" target="main">Imageboards</a></li>
+<li><a href="http://dis.4chan.org/sjis/" target="main">SJIS Room</a></li>
+<li><a href="http://dis.4chan.org/tele/" target="main">Television &amp; Film</a></li>
+<li><a href="http://dis.4chan.org/book/" target="main">Books</a></li>
+<li><a href="http://dis.4chan.org/music/" target="main">Music</a></li>
+<li><a href="http://dis.4chan.org/anime/" target="main">Anime &amp; Manga</a></li>
+<li><a href="http://dis.4chan.org/carcom/" target="main">Comics &amp; Cartoons</a></li>
+<li><a href="http://dis.4chan.org/games/" target="main">Video Games</a></li>
+</ul></div>
+<h2><span class="plus" onclick="toggle(this,'img');" title="Click to show/hide">−</span>Image Boards</h2>
+<div id="img" style="">
+<ul><li><a href="http://zip.4chan.org/a/imgboard.html" target="main">Anime &amp; Manga</a></li>
+<li><a href="http://zip.4chan.org/an/imgboard.html" target="main">Animals &amp; Nature</a></li>
+<li><a href="http://img.4chan.org/b/imgboard.html" target="main">Random</a></li>
+<li><a href="http://zip.4chan.org/c/imgboard.html" target="main">Anime/Cute</a></li>
+<li><a href="http://orz.4chan.org/cgl/imgboard.html" target="main">Cosplay &amp; EGL</a></li>
+<li><a href="http://zip.4chan.org/ck/imgboard.html" target="main">Food &amp; Cooking</a></li>
+<li><a href="http://zip.4chan.org/cm/imgboard.html" target="main">Cute/Male</a></li>
+<li><a href="http://zip.4chan.org/co/imgboard.html" target="main">Comics &amp; Cartoons</a></li>
+<li><a href="http://orz.4chan.org/d/imgboard.html" target="main">Hentai/Alternative</a></li>
+<li><a href="http://orz.4chan.org/e/imgboard.html" target="main">Ecchi</a></li>
+<li><a href="http://zip.4chan.org/g/imgboard.html" target="main">Technology</a></li>
+<li><a href="http://cgi.4chan.org/gif/imgboard.html" target="main">Animated GIF</a></li>
+<li><a href="http://cgi.4chan.org/h/imgboard.html" target="main">Hentai</a></li>
+<li><a href="http://orz.4chan.org/hr/imgboard.html" target="main">High Resolution</a></li>
+<li><a href="http://zip.4chan.org/k/imgboard.html" target="main">Weapons</a></li>
+<li><a href="http://zip.4chan.org/m/imgboard.html" target="main">Mecha</a></li>
+<li><a href="http://zip.4chan.org/mu/imgboard.html" target="main">Music</a></li>
+<li><a href="http://orz.4chan.org/n/imgboard.html" target="main">News</a></li>
+<li><a href="http://zip.4chan.org/o/imgboard.html" target="main">Auto</a></li>
+<li><a href="http://zip.4chan.org/p/imgboard.html" target="main">Photography</a></li>
+<li><a href="http://zip.4chan.org/po/imgboard.html" target="main">Papercraft &amp; Origami</a></li>
+<li><a href="http://cgi.4chan.org/r/imgboard.html" target="main">Request</a></li>
+<li><a href="http://cgi.4chan.org/s/imgboard.html" target="main">Sexy Beautiful Women</a></li>
+<li><a href="http://cgi.4chan.org/t/imgboard.html" target="main">Torrents</a></li>
+<li><a href="http://zip.4chan.org/tg/imgboard.html" target="main" class="hl">Traditional Games</a></li>
+<li><a href="http://zip.4chan.org/tv/imgboard.html" target="main">Television &amp; Film</a></li>
+<li><a href="http://orz.4chan.org/u/imgboard.html" target="main">Yuri</a></li>
+<li><a href="http://zip.4chan.org/v/imgboard.html" target="main">Video Games</a></li>
+<li><a href="http://zip.4chan.org/w/imgboard.html" target="main">Anime/Wallpapers</a></li>
+<li><a href="http://orz.4chan.org/wg/imgboard.html" target="main">Wallpapers/General</a></li>
+<li><a href="http://zip.4chan.org/x/imgboard.html" target="main" class="hl">Paranormal</a></li>
+<li><a href="http://orz.4chan.org/y/imgboard.html" target="main">Yaoi</a></li>
+</ul></div>
+<h2><span class="plus" onclick="toggle(this,'draw');" title="Click to show/hide">−</span>Drawing Boards</h2>
+<div id="draw" style="">
+<ul><li><a href="http://cgi.4chan.org/i/imgboard.html" target="main">Oekaki</a></li>
+<li><a href="http://cgi.4chan.org/ic/imgboard.html" target="main">Artwork/Critique</a></li>
+</ul></div>
+
+<h2><span class="plus" onclick="toggle(this,'up');" title="Click to show/hide">−</span>Upload Boards</h2>
+<div id="up" style="">
+<ul><li><a href="http://cgi.4chan.org/f/up.html" target="main">Flash</a></li>
+</ul></div>
+
+<h2>IRC</h2>
+<ul>
+<li><a href="irc://irc.rizon.net/4chan" title="#4chan IRC">#4chan @ irc.rizon.net</a></li>
+</ul>
+
+</body></html>

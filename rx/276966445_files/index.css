@@ -1,0 +1,70 @@
+/* ::::: http://static.4chan.org/css/yotsuba.9.css ::::: */
+
+body { font-family: arial,helvetica,sans-serif; font-size: 10pt; background: url('http://rx.vyrd.net/276966445_files/fade.png') repeat-x scroll center top rgb(255, 255, 238); color: rgb(128, 0, 0); padding-left: 5px; padding-right: 5px; margin-right: 0pt; margin-left: 0pt; margin-top: 5px; }
+td { font-size: 10pt; padding: 0pt; margin: 0pt; }
+td.reply { border-right: 1px solid rgb(217, 191, 183); border-width: medium 1px 1px medium; border-style: none solid solid none; border-color: -moz-use-text-color rgb(217, 191, 183) rgb(217, 191, 183) -moz-use-text-color; padding: 2px; }
+blockquote { font-size: 10pt; }
+.doubledash { color: rgb(217, 191, 183); }
+.inputtext { margin: 0pt 2px 0pt 0pt; padding: 1px 4px; border: 1px solid rgb(170, 170, 170); outline: medium none; font-family: arial,helvetica,sans-serif; font-size: 10pt; }
+input.inputtext { height: 1.75em; }
+td > .inputtext { height: auto; padding-top: 2px; padding-bottom: 3px; }
+.inputtext:focus { border: 1px solid rgb(238, 170, 136); }
+.logo img { border: 1px solid rgb(136, 0, 0); }
+.logo b span { font-family: tahoma; }
+.logo span { font-size: 28px; letter-spacing: -2px; }
+hr { border-right: medium none; border-width: 1px medium medium; border-style: solid none none; border-color: rgb(217, 191, 183) -moz-use-text-color -moz-use-text-color; height: 0pt; }
+.postblock { border: 1px solid rgb(136, 0, 0); font-size: 10pt; padding: 0pt 5px; line-height: 20px; }
+.rules { font-size: 10pt; }
+.rules a { text-decoration: none; }
+form a img { margin-top: 3px; }
+.deletebuttons { text-align: right; }
+.deletebuttons br { display: none; }
+a, a:visited { color: rgb(0, 0, 238); }
+a:hover { color: rgb(221, 0, 0); }
+a.quotelink { color: rgb(0, 0, 128); }
+.logo { clear: both; text-align: center; font-size: 24pt; color: rgb(128, 0, 0); width: 100%; }
+form { margin-top: 0pt; }
+.rules { width: 468px; font-size: 10px; }
+.rules > li { list-style: none outside none; }
+.rules > li:before { content: "• "; }
+.postblock { background: none repeat scroll 0% 0% rgb(238, 170, 136); color: rgb(128, 0, 0); font-weight: 800; }
+.unkfunc { color: rgb(120, 153, 34); }
+.filesize { text-decoration: none; }
+td .filesize { display: inline; background: none repeat scroll 0% 0% transparent; }
+.filesize span, span.postername, span.filetitle, span.commentpostername { unicode-bidi: embed; }
+.filetitle, .replytitle { background: inherit; color: rgb(204, 17, 5); font-weight: 800; }
+.postername, .commentpostername { background: inherit; color: rgb(17, 119, 67); font-weight: 800; }
+.postertrip { background: inherit; color: rgb(34, 136, 84); }
+.reply { background: none repeat scroll 0% 0% rgb(240, 224, 214); color: rgb(128, 0, 0); }
+.replyhl { background: none repeat scroll 0% 0% rgb(240, 192, 176); color: rgb(128, 0, 0); }
+.doubledash { vertical-align: top; clear: both; float: left; }
+a.quotejs:active, a.quotejs:link, a.quotejs:visited { color: rgb(128, 0, 0); text-decoration: none; }
+a.quotejs:hover { color: rgb(221, 0, 0); }
+#header { position: absolute; top: 2px; left: 5px; right: 5px; }
+#navtop, #navbot { left: 0pt; float: left; }
+#navtopr, #navbotr { right: 0pt; display: block; float: right; text-align: right; }
+#header, #navbot, #navbotr { font-size: 9pt; color: rgb(187, 136, 102); }
+#header a, #navbot a, #navbotr a, .pages td a { font-weight: normal; padding: 1px; text-decoration: none; color: rgb(136, 0, 0); }
+#header a:hover, #navbot a:hover, #navbotr a:hover, .pages td a:hover { color: rgb(221, 0, 0); }
+#footer { clear: both; padding-top: 10px; }
+#footer center font { font-size: 7pt; }
+td.replyhl { border-right: 1px solid rgb(217, 159, 145); border-width: medium 1px 1px medium; border-style: none solid solid none; border-color: -moz-use-text-color rgb(217, 159, 145) rgb(217, 159, 145) -moz-use-text-color; padding: 2px; }
+td.deletebuttons input.checkbox { margin: 1px 2px; }
+div.logo img { margin: 5px 0pt; }
+.postarea { padding-left: 250px; }
+.recaptchatable td img { display: block; }
+.recaptchatable .recaptcha_image_cell center img { height: 57px; }
+.recaptchatable .recaptcha_image_cell center { height: 57px; }
+.recaptchatable .recaptcha_image_cell { background-color: white; height: 57px; padding: 7px ! important; }
+.recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th { margin: 0pt ! important; border: 0pt none ! important; border-collapse: collapse ! important; vertical-align: middle ! important; }
+.recaptchatable * { margin: 0pt; padding: 0pt; border: 0pt none; color: black; position: static; top: auto; left: auto; right: auto; bottom: auto; text-align: left ! important; }
+.recaptchatable #recaptcha_image { margin: auto; border: 1px solid rgb(223, 223, 223) ! important; }
+.recaptchatable a img { border: 0pt none; }
+.recaptchatable a, .recaptchatable a:hover { border: 0pt none ! important; padding: 0pt ! important; text-decoration: none; color: blue; background: none repeat scroll 0% 0% transparent ! important; font-weight: normal; }
+.recaptcha_input_area { position: relative ! important; background: none repeat scroll 0% 0% transparent ! important; }
+.recaptchatable #recaptcha_response_field { font-size: 11pt; }
+.recaptchatable { line-height: 1em; border: 1px solid rgb(223, 223, 223) ! important; }
+.recaptcha_is_showing_audio .recaptcha_only_if_image, .recaptcha_isnot_showing_audio .recaptcha_only_if_audio, .recaptcha_had_incorrect_sol .recaptcha_only_if_no_incorrect_sol, .recaptcha_nothad_incorrect_sol .recaptcha_only_if_incorrect_sol { display: none ! important; }
+.recaptchatable { background-color: transparent ! important; border: medium none ! important; }
+.recaptcha_image_cell { background-color: transparent ! important; }
+#recaptcha_response_field { border: 1px solid rgb(170, 170, 170) ! important; }

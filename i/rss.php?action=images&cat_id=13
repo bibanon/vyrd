@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /vp/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=13</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:41:14 GMT</pubDate>
+    
+    <item>
+      <title>stages of a /vp/oreon</title>
+      <link>http://i.vyrd.net/details.php?image_id=34</link>
+      <pubDate>Wed, 17 Jul 2013 17:29:30 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=13">/vp/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/13/vp-progression.png" length="10256" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=34</guid>
+    </item>
+    <item>
+      <title>theory about mandibuzz</title>
+      <link>http://i.vyrd.net/details.php?image_id=25</link>
+      <pubDate>Wed, 17 Jul 2013 16:26:31 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=13">/vp/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/13/vp-mandibuzz.png" length="4551" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=25</guid>
+    </item>
+    <item>
+      <title>shinx diaper roleplaying</title>
+      <link>http://i.vyrd.net/details.php?image_id=24</link>
+      <pubDate>Wed, 17 Jul 2013 16:24:18 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=13">/vp/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/13/vp-diaper.png" length="5586" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=24</guid>
+    </item>
+
+  </channel>
+</rss>

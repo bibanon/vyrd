@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /jp/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=18</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:32:51 GMT</pubDate>
+    
+    <item>
+      <title>depression sucks (car analogy)</title>
+      <link>http://i.vyrd.net/details.php?image_id=107</link>
+      <pubDate>Tue, 20 May 2014 21:05:07 GMT</pubDate>
+      <description><![CDATA[http://archive.foolz.us/jp/thread/8194847/#8195095]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=18">/jp/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/18/depression.jpg" length="1633" type="image/jpeg" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=107</guid>
+    </item>
+    <item>
+      <title>10GET on /jp/</title>
+      <link>http://i.vyrd.net/details.php?image_id=65</link>
+      <pubDate>Fri, 19 Jul 2013 11:29:54 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=18">/jp/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/18/jp-10get.jpg" length="2334" type="image/jpeg" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=65</guid>
+    </item>
+
+  </channel>
+</rss>

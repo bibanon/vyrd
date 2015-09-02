@@ -1,0 +1,3 @@
+scripts.htm                     http://imgbear.com/Crap/Scripts/advanced_janitor/?act=dukenukem&extra=1
+4chan_janitor_inline.user.js    http://imgbear.com/Crap/Scripts/advanced_janitor/4chan_janitor_inline.user.js
+4chan_janitor_reports.user.js   http://imgbear.com/Crap/Scripts/advanced_janitor/4chan_janitor_reports.user.js

@@ -1,0 +1,436 @@
+<html><head>
+<style type="text/css">
+<!--
+body {
+	background: #ffe;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+table {
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	padding: 5px;
+	border-collapse:collapse;
+}
+td,th {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	border-collapse:collapse;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+th { background: #fca; }
+
+.redbg { background: #ffe0e0; }
+.bluebg { background: #eef2ff; }
+
+input,select,.fakebutton {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F8F8F8;
+	border: 1px solid #808080;
+	vertical-align: middle;
+}
+select { vertical-align:top; }
+option,optgroup {
+	font-family: Verdana;
+	font-size: 9pt;
+}
+.fakebutton {
+	display:block;
+	height: 16px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	left:0px; right:0px;
+	text-decoration: none;
+	text-align: center;
+}
+* html .fakebutton { /* IE */
+	width:100%;
+	padding-bottom: 2px;
+}
+
+.actions, .actions td { border: none; }
+.actions td {
+	vertical-align: top;
+	padding-right: 5px;
+}
+
+
+.postblock {
+	background-color: #FCA;
+	font-weight: bold;
+	text-align: right;
+}
+-->
+</style>
+<title>reports</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div><b style="float: left">Displaying reported posts 1-50 sorted by type.<br>323 pending ban requests.</b>
+<select style="float:right; margin-right:10px;" onchange='window.location="?mode="+this.options[this.selectedIndex].value+""'><optgroup label="mode"><option value="overview" selected="selected">main</option><option value="reporters">reporters</option><option value="ban_reqs">ban requests</option><option value="alertlist">board alerts</option><option value="stats">stats</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=overview&amp;board="+this.options[this.selectedIndex].value+""'><optgroup label="board"><option value="" selected="selected">all</option><option value="a">a</option><option value="adv">adv</option><option value="an">an</option><option value="b">b</option><option value="c">c</option><option value="cgl">cgl</option><option value="ck">ck</option><option value="cm">cm</option><option value="co">co</option><option value="d">d</option><option value="e">e</option><option value="f">f</option><option value="fa">fa</option><option value="fit">fit</option><option value="g">g</option><option value="gif">gif</option><option value="h">h</option><option value="hr">hr</option><option value="i">i</option><option value="ic">ic</option><option value="int">int</option><option value="jp">jp</option><option value="k">k</option><option value="lit">lit</option><option value="m">m</option><option value="mu">mu</option><option value="n">n</option><option value="o">o</option><option value="p">p</option><option value="po">po</option><option value="r">r</option><option value="s">s</option><option value="sci">sci</option><option value="soc">soc</option><option value="sp">sp</option><option value="t">t</option><option value="tg">tg</option><option value="toy">toy</option><option value="trv">trv</option><option value="tv">tv</option><option value="u">u</option><option value="v">v</option><option value="vp">vp</option><option value="w">w</option><option value="wg">wg</option><option value="x">x</option><option value="y">y</option><option value="3">3</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=overview&amp;sort="+this.options[this.selectedIndex].value+""'><optgroup label="sort"><option selected="selected" value="type">severity</option><option value="count"># of reports</option><option value="date">most recent report</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=overview&amp;hide="+this.options[this.selectedIndex].value+""'><optgroup label="hide"><option value="" selected="selected">none</option><option value="b">/b/ posts w/less than 15 rep.</option><option value="low">any posts w/less than 3 rep.</option></optgroup></select>&nbsp;
+
+</div><br><br>
+<center>
+&nbsp;&nbsp;<a href="https://www.4chan.org/reports/?mode=overview&amp;offset=50">Next 50 &gt;&gt;</a><table>
+<tbody><tr><th title="escalated">flag</th><th>board</th><th>no.</th><th>reports</th><th>details</th></tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/g/</td>
+	<td><a href="http://sys.4chan.org/g/imgboard.php?res=19700857">19700857</a></td>
+	<td>12</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=g&amp;no=19700857" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/co/</td>
+	<td><a href="http://sys.4chan.org/co/imgboard.php?res=29183147">29183147</a></td>
+	<td>9</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=co&amp;no=29183147" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350554992">350554992</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350554992" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/v/</td>
+	<td><a href="http://sys.4chan.org/v/imgboard.php?res=108418100">108418100</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=v&amp;no=108418100" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/g/</td>
+	<td><a href="http://sys.4chan.org/g/imgboard.php?res=19699975">19699975</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=g&amp;no=19699975" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269517">4269517</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269517" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4268916">4268916</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4268916" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/v/</td>
+	<td><a href="http://sys.4chan.org/v/imgboard.php?res=108405937">108405937</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=v&amp;no=108405937" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269124">4269124</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269124" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/mu/</td>
+	<td><a href="http://sys.4chan.org/mu/imgboard.php?res=19694323">19694323</a></td>
+	<td>2</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=mu&amp;no=19694323" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4267837">4267837</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4267837" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/v/</td>
+	<td><a href="http://sys.4chan.org/v/imgboard.php?res=108416463">108416463</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=v&amp;no=108416463" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352090">12352090</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352090" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350540275">350540275</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350540275" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269509">4269509</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269509" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12351121">12351121</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12351121" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/a/</td>
+	<td><a href="http://sys.4chan.org/a/imgboard.php?res=54001390">54001390</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=a&amp;no=54001390" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4268402">4268402</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4268402" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/r/</td>
+	<td><a href="http://sys.4chan.org/r/imgboard.php?res=8897890">8897890</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=r&amp;no=8897890" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352096">12352096</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352096" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350540384">350540384</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350540384" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12353009">12353009</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12353009" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350536683">350536683</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350536683" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350541545">350541545</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350541545" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269519">4269519</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269519" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352076">12352076</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352076" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350538083">350538083</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350538083" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12328873">12328873</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12328873" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/tv/</td>
+	<td><a href="http://sys.4chan.org/tv/imgboard.php?res=18064840">18064840</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=tv&amp;no=18064840" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352321">12352321</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352321" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/v/</td>
+	<td><a href="http://sys.4chan.org/v/imgboard.php?res=108410179">108410179</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=v&amp;no=108410179" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350541822">350541822</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350541822" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269521">4269521</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269521" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352080">12352080</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352080" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12353228">12353228</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12353228" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350538881">350538881</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350538881" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352083">12352083</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352083" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350539836">350539836</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350539836" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269288">4269288</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269288" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4270473">4270473</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4270473" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/s/</td>
+	<td><a href="http://sys.4chan.org/s/imgboard.php?res=12352085">12352085</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=s&amp;no=12352085" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/b/</td>
+	<td><a href="http://sys.4chan.org/b/imgboard.php?res=350539949">350539949</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=b&amp;no=350539949" class="fakebutton"> + </a></td>
+</tr>
+<tr class="redbg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/int/</td>
+	<td><a href="http://sys.4chan.org/int/imgboard.php?res=4269507">4269507</a></td>
+	<td>1</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=int&amp;no=4269507" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/d/</td>
+	<td><a href="http://sys.4chan.org/d/imgboard.php?res=3725620">3725620</a></td>
+	<td>8</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=d&amp;no=3725620" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/d/</td>
+	<td><a href="http://sys.4chan.org/d/imgboard.php?res=3724812">3724812</a></td>
+	<td>7</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=d&amp;no=3724812" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/d/</td>
+	<td><a href="http://sys.4chan.org/d/imgboard.php?res=3724186">3724186</a></td>
+	<td>6</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=d&amp;no=3724186" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/mu/</td>
+	<td><a href="http://sys.4chan.org/mu/imgboard.php?res=19692988">19692988</a></td>
+	<td>6</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=mu&amp;no=19692988" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/d/</td>
+	<td><a href="http://sys.4chan.org/d/imgboard.php?res=3724908">3724908</a></td>
+	<td>6</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=d&amp;no=3724908" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/d/</td>
+	<td><a href="http://sys.4chan.org/d/imgboard.php?res=3724803">3724803</a></td>
+	<td>6</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=d&amp;no=3724803" class="fakebutton"> + </a></td>
+</tr>
+<tr class="bluebg">
+	<td align="center"><b>&nbsp;</b></td>
+	<td>/d/</td>
+	<td><a href="http://sys.4chan.org/d/imgboard.php?res=3724806">3724806</a></td>
+	<td>6</td>
+	<td><a href="https://www.4chan.org/reports/?mode=details&amp;board=d&amp;no=3724806" class="fakebutton"> + </a></td>
+</tr>
+</tbody></table>
+&nbsp;&nbsp;<a href="https://www.4chan.org/reports/?mode=overview&amp;offset=50">Next 50 &gt;&gt;</a></center>
+
+</body></html>

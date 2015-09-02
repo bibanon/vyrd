@@ -1,0 +1,178 @@
+BODY {
+	PADDING-RIGHT: 5px; MARGIN-TOP: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12pt; BACKGROUND: #ffffee; MARGIN-LEFT: 0px; COLOR: #800000; MARGIN-RIGHT: 0px
+}
+A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #0000ee; FONT-FAMILY: serif
+}
+A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #0000ee; FONT-FAMILY: serif
+}
+A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dd0000; FONT-FAMILY: serif
+}
+A.quotelink {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000080; FONT-FAMILY: serif
+}
+.logo {
+	CLEAR: both; FONT-SIZE: 24pt; BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 100%; COLOR: #800000; TEXT-ALIGN: center
+}
+.postarea {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+FORM {
+	MARGIN-TOP: 0px
+}
+.rules {
+	FONT-SIZE: 10px; WIDTH: 468px; FONT-FAMILY: sans-serif
+}
+.rules A {
+	FONT-FAMILY: sans-serif
+}
+.rules A:visited {
+	FONT-FAMILY: sans-serif
+}
+.rules A:link {
+	FONT-FAMILY: sans-serif
+}
+.rules LI {
+	MARGIN-LEFT: 1em; TEXT-INDENT: -1em
+}
+.postblock {
+	FONT-WEIGHT: 800; BACKGROUND: #eeaa88; COLOR: #800000
+}
+.footer {
+	FONT-SIZE: 12px; FONT-FAMILY: serif; TEXT-ALIGN: center
+}
+.unkfunc {
+	COLOR: #789922
+}
+.filesize {
+	FONT-SIZE: 16px; FONT-FAMILY: serif; TEXT-DECORATION: none
+}
+.filesize SPAN {
+	unicode-bidi: embed
+}
+SPAN.postername {
+	unicode-bidi: embed
+}
+SPAN.filetitle {
+	unicode-bidi: embed
+}
+SPAN.commentpostername {
+	unicode-bidi: embed
+}
+.filetitle {
+	FONT-WEIGHT: 800; FONT-SIZE: 18px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #cc1105; FONT-FAMILY: serif
+}
+.replytitle {
+	FONT-WEIGHT: 800; FONT-SIZE: 18px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #cc1105; FONT-FAMILY: serif
+}
+.postername {
+	FONT-WEIGHT: 800; FONT-SIZE: 16px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #117743; FONT-FAMILY: serif
+}
+.commentpostername {
+	FONT-WEIGHT: 800; FONT-SIZE: 16px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #117743; FONT-FAMILY: serif
+}
+.postertrip {
+	FONT-SIZE: 16px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #228854; FONT-FAMILY: serif
+}
+.oldpost {
+	FONT-WEIGHT: 800; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f00000; FONT-FAMILY: serif
+}
+.omittedposts {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #707070
+}
+.abbr {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #707070
+}
+.reply {
+	BACKGROUND: #f0e0d6; COLOR: #800000; FONT-FAMILY: serif
+}
+.replyhl {
+	BACKGROUND: #f0c0b0; COLOR: #800000; FONT-FAMILY: serif
+}
+.doubledash {
+	CLEAR: both; FLOAT: left; VERTICAL-ALIGN: top
+}
+A.quotejs:active {
+	COLOR: #800000; TEXT-DECORATION: none
+}
+A.quotejs:link {
+	COLOR: #800000; TEXT-DECORATION: none
+}
+A.quotejs:visited {
+	COLOR: #800000; TEXT-DECORATION: none
+}
+A.quotejs:hover {
+	FONT-WEIGHT: bold
+}
+.tn_thread {
+	BORDER-RIGHT: #ea8 1px solid; BORDER-TOP: #ea8 1px solid; BACKGROUND: #eed; FLOAT: left; MARGIN: 0px 20px 20px; BORDER-LEFT: #ea8 1px solid; WIDTH: 200px; BORDER-BOTTOM: #ea8 1px solid; HEIGHT: 100px; TEXT-ALIGN: center
+}
+.tn_reply {
+	BORDER-RIGHT: #ea8 1px solid; BORDER-TOP: #ea8 1px solid; BACKGROUND: #eed; FLOAT: left; MARGIN: 0px 20px 20px; BORDER-LEFT: #ea8 1px solid; WIDTH: 100px; BORDER-BOTTOM: #ea8 1px solid; HEIGHT: 100px; TEXT-ALIGN: center
+}
+#ad {
+	BORDER-RIGHT: #eeaa88 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eeaa88 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 11px; RIGHT: 1em; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #eeaa88 1px solid; WIDTH: 120px; PADDING-TOP: 0px; BORDER-BOTTOM: #eeaa88 1px solid; FONT-FAMILY: arial,helvetica, sans-serif; POSITION: absolute
+}
+#ad DIV {
+	PADDING-RIGHT: 0.4em; PADDING-LEFT: 0.4em; PADDING-BOTTOM: 0.4em; MARGIN: 0px; PADDING-TOP: 0.4em
+}
+#ad DIV.ad-title {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; FONT-SIZE: 11px; BACKGROUND: #eeaa88; PADDING-BOTTOM: 0em; COLOR: #800000; PADDING-TOP: 0em
+}
+#ad DIV.ad-title A {
+	COLOR: #800000; FONT-FAMILY: arial,helvetica, sans-serif
+}
+.bottomAdFoot A {
+	COLOR: #800000; FONT-FAMILY: arial,helvetica, sans-serif
+}
+.bottomAdFoot A:hover {
+	COLOR: #800000; FONT-FAMILY: arial,helvetica, sans-serif
+}
+#ad DIV.ad-text A {
+	FONT-FAMILY: arial,helvetica, sans-serif
+}
+.adHeadline {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; FONT-FAMILY: arial,helvetica, sans-serif
+}
+.adText {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #800000; FONT-FAMILY: arial,helvetica, sans-serif; TEXT-DECORATION: none
+}
+.bottomAdTitle {
+	BACKGROUND: #eeaa88; COLOR: #800000; FONT-FAMILY: arial,helvetica, sans-serif
+}
+#bottomAd {
+	FONT-SIZE: 11px; HEIGHT: 52px
+}
+#bottomAdOuter {
+	BORDER-RIGHT: #eeaa88 1px solid; BORDER-TOP: #eeaa88 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #eeaa88 1px solid; WIDTH: 600px; BORDER-BOTTOM: #eeaa88 1px solid
+}
+.spoiler A.quotelink {
+	
+}
+.spoiler .unkfunc {
+	
+}
+.exif {
+	DISPLAY: none; FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica, sans-serif
+}
+.exif TD {
+	FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica, sans-serif
+}
+.exif TD B {
+	FONT-WEIGHT: 800; FONT-SIZE: x-small; TEXT-DECORATION: underline
+}
+#header {
+	RIGHT: 5px; LEFT: 5px; POSITION: absolute
+}
+* HTML #header {
+	WIDTH: 100%
+}
+#navtop {
+	FONT-SIZE: 11pt; LEFT: 0px; FLOAT: left
+}
+#navtopr {
+	DISPLAY: block; FONT-SIZE: 11pt; RIGHT: 0px; TEXT-ALIGN: right
+}
+

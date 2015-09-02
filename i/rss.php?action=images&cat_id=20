@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /g/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=20</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:33:18 GMT</pubDate>
+    
+    <item>
+      <title>dear diary / BSD faggots are at it again</title>
+      <link>http://i.vyrd.net/details.php?image_id=106</link>
+      <pubDate>Tue, 20 May 2014 20:52:30 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=20">/g/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/20/dear-diary-bsd-faggots-at-it-again.png" length="2011" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=106</guid>
+    </item>
+    <item>
+      <title>tramp anon</title>
+      <link>http://i.vyrd.net/details.php?image_id=98</link>
+      <pubDate>Fri, 30 Aug 2013 01:02:59 GMT</pubDate>
+      <description><![CDATA[full original story as posted on /g/]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=20">/g/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/20/tramp-anon.png" length="2099" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=98</guid>
+    </item>
+
+  </channel>
+</rss>

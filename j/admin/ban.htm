@@ -1,0 +1,211 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- meta HTTP-EQUIV="pragma" CONTENT="no-cache" -->
+<style type="text/css">
+<!--
+tr,td,th { font-family: Verdana; font-size: 10pt }
+a { text-decoration: none; }
+a:hover { color:#DD0000; }
+/* span { font-size: 20pt; } */
+small { font-size:10pt }
+table {
+	border: 1px #FFFFEE solid;
+	border-spacing: 0px;
+	padding: 0px;
+	margin:0px;
+	border-collapse:collapse;
+}
+td {
+	border: 1px #FFFFEE solid;
+	border-spacing: 0px;
+	padding: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+input,select,textarea {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F8F8F8;
+	border: 1px solid #808080;
+}
+-->
+</style>
+<script language="JavaScript">
+function checkBrowser(){
+	this.ver=navigator.appVersion
+	this.dom=document.getElementById?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+	this.ie4=(document.all && !this.dom)?1:0;
+	this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+	return this
+}
+bw=new checkBrowser()
+
+function popup(vars) {
+  day = new Date();
+	id = day.getTime();
+	var newWindow;
+	var props = 'scrollBars=yes,resizable=no,toolbar=no,menubar=no,location=no,directories=no,width=400,height=360';
+	eval('popup'+id+' = window.open("admin.php?mode=admin&"+vars, "'+id+'", props);');
+}
+
+function more(div,div2,nest){
+	obj=bw.dom?document.getElementById(div).style:bw.ie4?document.all[div].style:bw.ns4?nest?document[nest].document[div]:document[div]:0;
+	obj2=bw.dom?document.getElementById(div2).style:bw.ie4?document.all[div2].style:bw.ns4?nest?document[nest].document[div2]:document[div2]:0;
+	if(obj.display=='') {
+		obj.display='none';
+		obj2.display='none';
+	} else {
+		obj.display='';
+		obj2.display='';
+	}
+}
+
+function swap(div,div2) {
+	var el = document.getElementById(div);
+	var el2 = document.getElementById(div2);
+	var tmp = el.style.display;
+	el.style.display = el2.style.display;
+	el2.style.display = tmp;
+}
+
+</script>
+<title>/k/ - Weapons</title>
+</head>
+<body text="#800000" vlink="#0000EE" bgcolor="#FFFFEE" link="#0000EE">
+
+<p align="center"><font size="5" color="#800000">
+<b><font style="font-size: 20pt;">/k/ - Weapons</font></b></font>
+</p><hr size="1" width="90%">
+<span style="float:left;">[<a href="http://boards.4chan.org/k/">Return</a>] [<a href="https://sys.4chan.org/k/imgboard.php">Update</a>] [<a href="https://sys.4chan.org/k/admin.php?admin=cleanup">Cleanup</a>]
+ [<a href="http://www.4chan.org/rules#k" target="_blank" title="Open the rules for this board in a new window">Rules</a>]
+[<a href="https://sys.4chan.org/k/admin.php?admin=logout">Logout</a>] <!-- <span style="position: absolute; right: 10px;"><button value="Reload" onClick="location.href='admin.php'"></span> -->
+</span><br><table width="100%"><tbody><tr><th bgcolor="#E08000">
+<font color="#FFFFFF">Manager Mode</font>
+</th></tr></tbody></table>
+<form action="http://j.vyrd.net/admin/admin.php" method="POST">
+<style>body { background: #f0a0a0; }</style><input name="mode" value="admin" type="hidden">
+<input name="admin" value="ban" type="hidden">
+<input name="user" value="########" type="hidden">
+<input name="pass" value="########" type="hidden">
+<input name="id" value="9625786" type="hidden">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr name="template_row" style="visibility: visible;"><td>Template:</td><td><select name="template" style="width: 12em" onchange="chooseTemplate();"><option selected="selected" value="-1">---</option><option value="0">CP</option></select><input style="visibility: visible;" name="deltemplate" value="Delete" onclick="return deleteTemplate();" type="button"></td></tr>
+<tr><td>Name:</td><td colspan="2"><input name="name" value="Anonymous" size="40" readonly="readonly" type="text"></td></tr>
+<tr><td>Host:</td><td colspan="2"><input name="host" value="###### (###.###.###.###)" size="40" readonly="readonly" type="text"></td></tr>
+<tr><td>Ban History:</td><td colspan="2"><a href="http://team.4chan.org/bans.php?admin=hist&amp;ip=###.###.###.###" target="_blank">1 ban for this IP.</a></td></tr>
+<tr><td>Public Ban Reason:</td><td colspan="2"><textarea name="pubreason" value="" cols="30" title="The banned user will see this message."></textarea></td></tr>
+<tr><td>Private Info:</td><td colspan="2"><input name="pvtreason" size="40" title="Optional extra information for the 4chan moderation. This will show up on the ban list." type="text"></td></tr>
+<tr><td>Unban in:</td><td colspan="2"><input name="days" size="3"> days [<input name="warn" value="1" title="Ban for 0 days" type="checkbox"> Warn] [<input name="indefinite" value="1" title="Ban forever" type="checkbox"> Permanent]</td></tr>
+<tr><td>Banned by:</td><td colspan="2"><input name="bannedby" value="########" size="40" readonly="readonly" type="text"></td></tr>
+<tr id="more_file"><td>More info:</td><td><a href='javascript:more("more_info","more_info")'>View</a></td></tr><tr><td>Ban options:</td><td><select name="bantype"><option selected="selected" value="local">Ban from /k/</option><option value="global">Global ban</option><option value="zonly">Banish to /z/</option></select> [<span title="Display USER WAS BANNED... message"><input name="banmsg" value="1" type="checkbox">msg</span>]</td><td align="right"><input name="submit" value="Ban" type="submit"></td></tr><tr><td>Post-ban action:</td><td><select name="postban"><option selected="selected" value="">None</option><option value="delpost">Delete post</option><option value="delfile">Delete file only</option><option value="delall">Delete all posts by IP</option></select></td></tr><tr name="local_template_row" style="visibility: visible;"><td></td><td><input style="width: 100%;" name="savetemplate" value="Save Local Template" onclick="return updateTemplate();" type="button"></td></tr></tbody></table>
+</form>
+	<script>
+	var e_template = document.getElementsByName("template")[0];
+	var globalTemplates = [{"no":"1","name":"CP","bantype":"global","banlen":"indefinite","publicreason":"CP","privatereason":"via ban template","days":"0","postban":"delall","blacklist":"image"}];
+	var templates = {};
+	var localTemplates = {};
+	
+	function $(e) {return document.getElementsByName(e)[0];}
+	function unhide(e) {$(e).style.visibility="visible";}
+
+	function chooseTemplate() {
+		var i = e_template.selectedIndex - 1;
+		if (i < 0) {
+			return;
+		}
+		
+		var t = templates[i];
+						
+		$("pubreason").value = t.publicreason;
+		$("pvtreason").value  = t.privatereason;
+		$("days").value = (t.banlen == "" && t.days > 0) ? t.days : "";
+		$("warn").checked = (t.banlen == "" && t.days == 0);
+		$("indefinite").checked = (t.banlen == "indefinite");
+		$("bantype").value = t.bantype;
+		$("postban").value = t.postban;
+	}
+	
+	function updateTemplate() {
+		var t = {};
+		var name = prompt("Enter a name for this template");
+		
+		t.banlen = $("indefinite").checked ? "indefinite" : "";
+		t.bantype = $("bantype").value;
+		//t.blacklist;
+		t.days = ($("warn").checked) ? 0 : $("days").value;
+		t.name = name;
+		t.postban = $("postban").value;
+		t.publicreason = $("pubreason").value;
+		t.privatereason = $("pvtreason").value;
+		
+		localTemplates[name] = t;
+		localStorage.setItem("ban_templates", JSON.stringify(localTemplates));
+		
+		initTemplate();
+		
+		return false;
+	}
+	
+	function deleteTemplate() {
+		var i = e_template.selectedIndex - 1;
+		
+		if (i >= globalTemplates.length)
+			delete localTemplates[templates[i].name];
+		
+		localStorage.setItem("ban_templates", JSON.stringify(localTemplates));
+		initTemplate();
+		
+		return false;
+	}
+	
+	function initTemplate() {
+		templates = globalTemplates;
+	
+		if (localStorage) {
+			var lt = JSON.parse(localStorage.getItem("ban_templates"));
+			if (lt) {
+				localTemplates = lt;
+				for (var t in localTemplates)
+					templates = templates.concat(localTemplates[t]);
+			}
+		}
+		
+		e_template.innerHTML = "<option value=\"-1\">---</option>";
+			
+		for (var i=0;i<templates.length;i++) {
+			var o = document.createElement("option");
+			var t = templates[i];
+			o.value = i;
+			o.innerHTML = t.name + ((i < globalTemplates.length) ? "" : " [Local]");
+			e_template.appendChild(o);
+		}
+		unhide("template_row");
+		if (localStorage) {
+			unhide("local_template_row");
+			unhide("deltemplate");
+		}
+	}
+	initTemplate();
+	</script>
+	<div id="more_info" style="position: absolute; left: 16px; top: 120px; width: 336px; height: 100px; background: none repeat scroll 0% 0% rgb(255, 255, 238); border: 1px solid black; display: none;"><table><tbody><tr id="more_file"><td>MD5:</td><td><input name="md5_disp" value="0cb33bf71c3d6d9f93fa31ae00b441d0" size="40" readonly="readonly" type="text"></td></tr><tr id="more_file"><td>Filename:</td><td><input name="md5_disp" value="1388567324653413" size="40" readonly="readonly" type="text"></td></tr><tr id="more_pwd"><td>Password:</td><td><input name="pwd_disp" value="3f8ead08" size="40" readonly="readonly" type="text"></td></tr><tr><td></td><td><a href='javascript:more("more_info","more_info")'>Close</a></td></tr></tbody></table></div><script type="text/javascript">
+				function cpbanbail() {
+					alert('OK, aborting thread ban.');
+					return false;
+				}
+				function docpban(no) {
+					var opreason = prompt('Enter the ban reason for the thread starter. (e.g. CP, jailbait, invasion)','CP');
+					if(!opreason) return cpbanbail();
+					var repreason = prompt('Enter the ban reason for the replies.','Replying to '+opreason);
+					if(!repreason) return cpbanbail();
+					if(!confirm('Ban EVERYONE in this thread? Thread starter gets global/permanent ban for "'+opreason+'", all replies get 2 days for "'+repreason+'"')) return cpbanbail();
+					var urlencode = encodeURIComponent;
+					location.href = '?admin=cpban&no=' + no + '&opreason=' + urlencode(opreason) + '&repreason=' + urlencode(repreason);
+				}
+				</script>
+				<input value="Ban entire thread" onclick="docpban(9625786);" type="button"></body></html>

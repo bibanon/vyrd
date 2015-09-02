@@ -1,0 +1,76 @@
+(function(){
+	var BF_Widget = {"w":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\n  \"http://www.w3.org/TR/html4/strict.dtd\">\n<html>\n<head>\n<meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n<title>Widget</title>\n<style type=\"text/css\">\n*{margin:0;padding:0;}\nh3 { font-size: 100%; font-weight: normal; }\nimg { border:0; }\na { text-decoration: none; display: block; }\n#BF_Widget { width:120px; height:235px; background:#e2e2e2; }\n#h,#f { background:#e32;color:#eee;font:normal 12px 'Lucida Sans',Verdana,Sans-Serif;width:120px;text-align:center; }\n#h{height:16px;} \n#f{height:11px;font-size:9px;}\ntable { border-collapse: collapse; border-spacing: 0; width: 100%; }\ntd { text-align: center; vertical-align: middle; overflow: hidden; }\n.bod { height: 208px; }\n.pad { height: 203px; }\n.pad td { height:px; }\n.u { width:90px; height:95px; margin: 0 auto; overflow: none; }\nimg { width:90px;height:60px; }\n.c { position:relative;top:-22px;width:87px;padding:1px 3px 1px 0;font: italic 9px 'Trebuchet MS',Trebuchet,Verdana,Sans-Serif;line-height:1;letter-spacing:0.1em;text-align:right;text-transform:uppercase;color:#fff;background:#e32;}\n.t { width:90px;overflow:hidden;position:relative;top:-10px;height:28px;color:#07e;font:normal 11px Georgia,Serif;text-align:center; line-height: 1.3; }\nspan { display:none;z-index:9;width:200px;background:#fff;color:#333;padding:5px 8px;border:1px solid #aaa; }\n</style>\n<!--[if lte IE 6]>\n\t<style type=\"text/css\" media=\"screen\">\n    .pad { }\n\t</style>\n<![endif]-->\n\n<script type=\"text/javascript\"> \nvar bf_widget = {};\nbf_widget.servers = [\"174.129.98.240\",\"204.236.243.21\",\"174.129.112.186\"];\n\nvar bfct = function (ct) {\n\tct = ct.replace(/^http:\\/\\/([^\\/]+)/, \"http://\" + bf_widget.servers[ Math.floor(Math.random() * bf_widget.servers.length) ] );\n\t(new Image()).src = ct;\n};\n\nfunction init() {\n\tvar options = params();\t\n\tif(options['BF_CapColor']) {\n\t\tdocument.getElementById('h').style.backgroundColor = options['BF_CapColor'];\n\t\tdocument.getElementById('f').style.backgroundColor = options['BF_CapColor'];\n\t\tif(options['BF_CapTextColor']) {\n\t\t\tdocument.getElementById('h').style.color = options['BF_CapTextColor'];\n\t\t\tdocument.getElementById('f').style.color = options['BF_CapTextColor'];\n\t\t}\n\t\tif(options['BF_BkgdColor']) {\n\t\t\tdocument.getElementById('BF_Widget').style.backgroundColor = options['BF_BkgdColor'];\t\t\n\t\t}\n\t\tif(options['BF_TextColor']) {\n\t\t\th4s = document.getElementsByTagName('h3');\t\n\t\t\tfor( var i = 0; i < h4s.length ; i++  ) {\n\t\t\t\th4s[i].getElementsByTagName('a')[0].style.color = options['BF_TextColor']; \n\t\t\t}\n\t\t}\n\t\tdocument.getElementById('BF_Widget').style.display = 'block';\n\t}\n}\n\nfunction params() {\n\tvar query = window.location.search.substring(1);\n\tquery = query.replace(/&amp;/g, '&');\n\tvar vars = query.split(\"&\");\n\tquery_params = new Object()\n\tfor (var i=0;i<vars.length;i++) {\n\t\tvar pair = vars[i].split(\"=\");\n\t\t// console.info(pair[0]);\n\t\tquery_params[pair[0]] = unescape(pair[1]).replace(/\\+/g, \" \");\n\t}\n\treturn query_params; \n}\n\n\n</script>\n\n</head>\n<body>\n\n<div id=\"BF_Widget\" style=\"display:none;\">\n  <a id=\"h\" href=\"http://buzzfeed.com\" target=\"_top\">BuzzFeed</a>\n  <table class=\"bod\" cellspacing=\"0\">\n    <tr>\n      <td class=\"bod\">\n        <table class=\"pad\" cellspacing=\"0\" height=\"203\">\n      <tr>\n        \n    \n    <td align=\"center\" valign=\"middle\">\n\n      \n   \t        <div class=\"u\">\n        <a href=\"http://www.buzzfeed.com/akdobbins/boycott-bill-murray-for-a-better-america?w=1\" target=\"_top\"  onmousedown=\"bfct('http://75.101.183.223/small.gif?type=100,14&user=akdobbins&buzz=boycott-bill-murray-for-a-better-america&c=71ZJRG7&u=77867&url=http%3A%2F%2Fbuzzfeed.com%2Fakdobbins%2Fboycott-bill-murray-for-a-better-america%2F&rd=http%3A%2F%2Fbuzzfeed.com%2Fakdobbins%2Fboycott-bill-murray-for-a-better-america%2F')\"><img src=\"http://ws-ec.buzzfeed.com/static/campaign_images/terminal01/2010/7/27/13/boycott-bill-murray-for-a-better-america-25004-1280251186-19_small.jpg\" id=\"boycott-bill-murray-for-a-better-america\" /></a>\n        <!-- <a class=\"c\" href=\"http://www.buzzfeed.com/akdobbins/boycott-bill-murray-for-a-better-america?w=1\" target=\"_top\"   onmousedown=\"bfct('http://75.101.183.223/small.gif?type=100,14&user=akdobbins&buzz=boycott-bill-murray-for-a-better-america&c=71ZJRG7&u=77867&url=http%3A%2F%2Fbuzzfeed.com%2Fakdobbins%2Fboycott-bill-murray-for-a-better-america%2F&rd=http%3A%2F%2Fbuzzfeed.com%2Fakdobbins%2Fboycott-bill-murray-for-a-better-america%2F')\">1,276 Clicks</a> -->\n        <h3 style=\"margin-top:7px;\"><a class=\"t\" href=\"http://www.buzzfeed.com/akdobbins/boycott-bill-murray-for-a-better-america?w=1\" target=\"_top\"   onmousedown=\"bfct('http://75.101.183.223/small.gif?type=100,14&user=akdobbins&buzz=boycott-bill-murray-for-a-better-america&c=71ZJRG7&u=77867&url=http%3A%2F%2Fbuzzfeed.com%2Fakdobbins%2Fboycott-bill-murray-for-a-better-america%2F&rd=http%3A%2F%2Fbuzzfeed.com%2Fakdobbins%2Fboycott-bill-murray-for-a-better-america%2F')\">Boycott Bill Murray For A Better America</a></h3>\n      </div>      \n    </td>\n        \n    \n        \n    \n      </tr>\n      <tr>\n    \n    <td align=\"center\" valign=\"middle\">\n\n      \n   \t        <div class=\"u\">\n        <a href=\"http://www.tmz.com/2010/07/27/lindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water\" target=\"_top\"  onmousedown=\"bfct('http://75.101.183.223/small.gif?type=100,14&user=tmz&buzz=lindsay-lohans-life-behind-bars-do87&c=71ZKP37&u=79KY07&url=http%3A%2F%2Fwww.tmz.com%2F2010%2F07%2F27%2Flindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water&rd=http%3A%2F%2Fwww.tmz.com%2F2010%2F07%2F27%2Flindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water')\"><img src=\"http://ws-ec.buzzfeed.com/static/campaign_images/terminal01/2010/7/27/17/lindsay-lohans-life-behind-bars-25036-1280265482-14_small.jpg\" id=\"lindsay-lohans-life-behind-bars-do87\" /></a>\n        <!-- <a class=\"c\" href=\"http://www.tmz.com/2010/07/27/lindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water\" target=\"_top\"   onmousedown=\"bfct('http://75.101.183.223/small.gif?type=100,14&user=tmz&buzz=lindsay-lohans-life-behind-bars-do87&c=71ZKP37&u=79KY07&url=http%3A%2F%2Fwww.tmz.com%2F2010%2F07%2F27%2Flindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water&rd=http%3A%2F%2Fwww.tmz.com%2F2010%2F07%2F27%2Flindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water')\">New Buzz</a> -->\n        <h3 style=\"margin-top:7px;\"><a class=\"t\" href=\"http://www.tmz.com/2010/07/27/lindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water\" target=\"_top\"   onmousedown=\"bfct('http://75.101.183.223/small.gif?type=100,14&user=tmz&buzz=lindsay-lohans-life-behind-bars-do87&c=71ZKP37&u=79KY07&url=http%3A%2F%2Fwww.tmz.com%2F2010%2F07%2F27%2Flindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water&rd=http%3A%2F%2Fwww.tmz.com%2F2010%2F07%2F27%2Flindsay-lohan-jail-details-alexis-neiers-quotes-tattoo-water')\">Lindsay Lohan's Life Behind Bars</a></h3>\n      </div>      \n    </td>\n        \n          </tr>\n    </table>\n        </td>\n      </tr>\n    </table>\n    \n  <a id=\"f\" href=\"http://buzzfeed.com/network/join\" target=\"_top\">Add to Your Site</a>\n</div>\n<script type=\"text/javascript\">init();</script>\n<script type=\"text/javascript\">/*<![CDATA[*/ if (!bf_widget) { var bf_widget = {}; bf_widget.servers = [\"174.129.98.240\",\"204.236.243.21\",\"174.129.112.186\"]; } function bfimps() { var widget = document.getElementById('BF_Widget'); var imgs = widget.getElementsByTagName('img'); bf_widget.d = { type: [], buzzid: [], user: [], buzz: [], userid: [] }; bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZJRG7\"); bf_widget.d.userid.push(\"77867\"); bf_widget.d.buzz.push(\"boycott-bill-murray-for-a-better-america\"); bf_widget.d.user.push(\"akdobbins\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZKP37\"); bf_widget.d.userid.push(\"79KY07\"); bf_widget.d.buzz.push(\"lindsay-lohans-life-behind-bars-do87\"); bf_widget.d.user.push(\"tmz\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZL607\"); bf_widget.d.userid.push(\"72KY7\"); bf_widget.d.buzz.push(\"shaq-sings-to-justin-bieber\"); bf_widget.d.user.push(\"mjs538\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZJNR7\"); bf_widget.d.userid.push(\"7XRV7\"); bf_widget.d.buzz.push(\"gator-party\"); bf_widget.d.user.push(\"bigcrush\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZK1R7\"); bf_widget.d.userid.push(\"7A1TG7\"); bf_widget.d.buzz.push(\"gta-5-for-xbox-kinect-1fn1\"); bf_widget.d.user.push(\"forestgibson\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZL0R7\"); bf_widget.d.userid.push(\"76T07\"); bf_widget.d.buzz.push(\"the-best-robotstxt-file\"); bf_widget.d.user.push(\"expresident\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZL8C7\"); bf_widget.d.userid.push(\"72ESJ7\"); bf_widget.d.buzz.push(\"justin-biebers-segway-getaway\"); bf_widget.d.user.push(\"awesomer\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZJKN7\"); bf_widget.d.userid.push(\"7B37\"); bf_widget.d.buzz.push(\"staring-at-boobs-makes-you-live-longer\"); bf_widget.d.user.push(\"scott\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZLFC7\"); bf_widget.d.userid.push(\"76T07\"); bf_widget.d.buzz.push(\"cat-hates-rick-astley\"); bf_widget.d.user.push(\"expresident\"); bf_widget.d.type.push(13); bf_widget.d.buzzid.push(\"71ZGI77\"); bf_widget.d.userid.push(\"715YG7\"); bf_widget.d.buzz.push(\"hope-for-the-quicky-nsfw-ish-5xy\"); bf_widget.d.user.push(\"nikoguy1\"); cloud_url = \"http://\" + (bf_widget.servers[ Math.floor(Math.random() * bf_widget.servers.length) ]) + \"/small.gif?\"; cloud_url += \"type=\" + bf_widget.d.type.slice(0, imgs.length).join(\",\"); cloud_url += \"&c=\" + bf_widget.d.buzzid.slice(0, imgs.length).join(\",\"); cloud_url += \"&buzz=\" + bf_widget.d.buzz.slice(0, imgs.length).join(\",\"); cloud_url += \"&u=\" + bf_widget.d.userid.slice(0, imgs.length).join(\",\"); cloud_url += \"&user=\" + bf_widget.d.user.slice(0, imgs.length).join(\",\"); cloud_url += \"&url=\" + escape(window.location.href); cloud_url += \"&z=\" + Math.floor((Math.random() * 10000)); (new Image()).src = cloud_url; (new Image()).src = \"http://pixel.quantserve.com/pixel/p-3aud4J6uA4Z6Y.gif?labels=Widget&busty=\" + Math.floor((Math.random() * 10000)); (BF_WIDGET_BEACON_PIXEL = new Image()).src = \"http://b.scorecardresearch.com/b?c1=7&c2=6768151&rn=0.1496034220741489&c7=\" + encodeURIComponent(window.location.href) + \"%2F&c3=2&c4=&c5=&c6=&c15=&c16=&c8=BuzzFeed&c9=&cv=1.6\" } var bfct = function (ct) { try { ct = ct.replace(/^http:\\/\\/([^\\/]+)/, \"http://\" + bf_widget.servers[ Math.floor(Math.random() * bf_widget.servers.length) ] ); ct += \"&z=\" + Math.floor((Math.random() * 10000)); var buzz_url = ct.match(/url=([^&]+)/); if ( buzz_url ) { if (!buzz_url[1].match(/buzzfeed.com/)) { var match_uid = ct.match(/&u=([A-Z0-9]+)/); var match_user = ct.match(/&user=([a-z0-9]+)/); if (match_user && match_user.length && match_uid && match_uid.length && buzz_url && buzz_url.length) { var uid = match_uid[1]; var user = match_user[1]; var cjn_ct = ct; cjn_ct = cjn_ct.replace(/&c=[^&]+/,'&c=' + uid ); cjn_ct = cjn_ct.replace(/&buzz=[^&]+/,'&buzz=' + user); cjn_ct = cjn_ct.replace(/type=[^&]+/,'type=23'); cjn_ct = cjn_ct.replace(/&url=[^&]+/,'' ); cjn_ct = cjn_ct.replace(/&rd=[^&]+/,'' ); (new Image()).src = cjn_ct; } } ct = ct.replace( /url=([^&])+/, \"url=\" + escape(document.location.href) ); } else { ct += \"&url=\" + escape(document.location.href); } (new Image()).src = ct; } catch(e) {console.error(e);} }; bfimps(); /*]]>*/ </script>\n\n</body>\n</html>\n\n"};
+	var id = 'frame_' + Math.floor(Math.random()*100000) + '-' + new Date().getTime();	
+	var loadit = null;
+	var loads = 0;
+  
+	var load_widget = function() { 	
+
+		loadit = function() {		
+			loads++;
+			var documentFrame = null;
+			var fframe = document.getElementById(id);
+			if(fframe && fframe.contentDocument) {
+				documentFrame = fframe.contentDocument;
+			}
+			if (! documentFrame && frames[id] && frames[id].document) {			
+				documentFrame = frames[id].document;
+			} 
+			if(! documentFrame) {
+				if(loads < 20) {
+					setTimeout(loadit, 400);
+					return;
+				} else {
+					return;
+				}
+			}
+			documentFrame.write( BF_Widget.w );
+			documentFrame.close();
+			
+			if (typeof(BF_CapColor) != 'undefined' ) {
+				documentFrame.getElementById('h').style.backgroundColor = BF_CapColor;
+				documentFrame.getElementById('f').style.backgroundColor = BF_CapColor;
+				documentFrame.getElementById('h').style.color = BF_CapTextColor;
+				documentFrame.getElementById('f').style.color = BF_CapTextColor;
+				documentFrame.getElementById('BF_Widget').style.backgroundColor = BF_BkgdColor;
+				h4s = documentFrame.getElementsByTagName('h3');
+				for( var i = 0; i < h4s.length ; i++  ) {
+					h4s[i].getElementsByTagName('a')[0].style.color = BF_TextColor; 
+				}
+			}
+			documentFrame.getElementById('BF_Widget').style.display = 'block';
+		}
+
+		if(typeof(BF_WEDJE) != 'undefined' && BF_WEDJE == true) {
+			var bbif = document.createElement('iframe');
+			bbif.width = 120;
+			bbif.height = 235;
+			bbif.frameBorder = 0;
+			bbif.frameborder = 0;
+			bbif.setAttribute('frameborder', 0);
+			bbif.setAttribute('frameBorder', 0);
+			bbif.scrolling = 'no';	
+			bbif.id = id;
+			bbif.name = id;
+			
+			var bbdiv = document.getElementById('BF_WIDGET');
+			var children = bbdiv.childNodes
+			for(i = 0; i < children.length; i++) {
+				bbdiv.removeChild(children[i]);
+			}
+			bbdiv.appendChild(bbif);					
+		} else {
+			document.write('<iframe id="' + id + '" name="' + id + '" width="120" height="235" scrolling="no" frameborder="0"></iframe>');		
+			document.close();
+		}
+		loadit();
+	}
+	
+	if(parent.BF_BUILDER) {
+		window.onload = load_widget;				
+	} else {
+		load_widget();
+	}
+})();
+
+// default: 0.1237

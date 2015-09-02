@@ -1,0 +1,48 @@
+
+/* ::::: http://content.4chan.org/css/futaba.css ::::: */
+
+body { background: rgb(255, 255, 238) none repeat; font-size: 12pt; color: rgb(128, 0, 0); padding-left: 5px; padding-right: 5px; margin-right: 0px; margin-left: 0px; margin-top: 5px; }
+a { background: inherit inherit inherit inherit inherit; color: rgb(0, 0, 238); font-family: serif; }
+a:visited { background: inherit inherit inherit inherit inherit; color: rgb(0, 0, 238); font-family: serif; }
+a:hover { background: inherit inherit inherit inherit inherit; color: rgb(221, 0, 0); font-family: serif; }
+a.quotelink { background: inherit inherit inherit inherit inherit; color: rgb(0, 0, 128); font-family: serif; }
+.logo { background: inherit inherit inherit inherit inherit; clear: both; text-align: center; font-size: 24pt; color: rgb(128, 0, 0); width: 100%; }
+.postarea { background: inherit inherit inherit inherit inherit; }
+.rules { width: 468px; font-size: 10px; }
+.rules, .rules a, .rules a:visited, .rules a:link { font-family: sans-serif; }
+.rules li { margin-left: 1em; text-indent: -1em; }
+.postblock { background: rgb(238, 170, 136) none repeat; color: rgb(128, 0, 0); font-weight: 800; }
+.footer { text-align: center; font-size: 12px; font-family: serif; }
+.unkfunc { color: rgb(120, 153, 34); }
+.filesize { font-size: 16px; font-family: serif; text-decoration: none; }
+.filetitle { background: inherit inherit inherit inherit inherit; font-size: 18px; font-family: serif; color: rgb(204, 17, 5); font-weight: 800; }
+.postername { background: inherit inherit inherit inherit inherit; font-size: 16px; font-family: serif; color: rgb(17, 119, 67); font-weight: 800; }
+.postertrip { background: inherit inherit inherit inherit inherit; font-size: 16px; font-family: serif; color: rgb(34, 136, 84); }
+.oldpost { background: inherit inherit inherit inherit inherit; font-family: serif; color: rgb(240, 0, 0); font-weight: 800; }
+.omittedposts, .abbr { background: inherit inherit inherit inherit inherit; color: rgb(112, 112, 112); }
+.reply { background: rgb(240, 224, 214) none repeat; color: rgb(128, 0, 0); font-family: serif; }
+.replyhl { background: rgb(240, 192, 176) none repeat; color: rgb(128, 0, 0); font-family: serif; }
+.doubledash { vertical-align: top; clear: both; float: left; }
+.replytitle { background: inherit inherit inherit inherit inherit; font-size: 18px; font-family: serif; color: rgb(204, 17, 5); font-weight: 800; }
+.commentpostername { background: inherit inherit inherit inherit inherit; font-size: 16px; font-family: serif; color: rgb(17, 119, 67); font-weight: 800; }
+a.quotejs:active, a.quotejs:link, a.quotejs:visited { color: rgb(128, 0, 0); text-decoration: none; }
+a.quotejs:hover { font-weight: bold; }
+.tn_thread { border: 1px solid rgb(238, 170, 136); margin: 0px 20px 20px; background: rgb(238, 238, 221) none repeat; width: 200px; height: 100px; float: left; text-align: center; }
+.tn_reply { border: 1px solid rgb(238, 170, 136); margin: 0px 20px 20px; background: rgb(238, 238, 221) none repeat; width: 100px; height: 100px; float: left; text-align: center; }
+.adHeadline { font-family: serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 10pt; line-height: normal; font-size-adjust: none; font-stretch: normal; text-decoration: underline; color: rgb(0, 0, 238); }
+.adText { font-family: serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10pt; line-height: normal; font-size-adjust: none; font-stretch: normal; text-decoration: none; color: rgb(136, 0, 0); }
+#ad { border: 1px solid rgb(238, 170, 136); margin: 0pt; padding: 0pt; width: 120px; position: absolute; right: 1em; font-family: arial,helvetica,sans-serif; font-size: 11px; }
+#ad div { margin: 0pt; padding: 0.4em; }
+#ad div.ad-title { padding: 0em; background: rgb(238, 170, 136) none repeat; color: rgb(128, 0, 0); font-size: 11px; }
+#ad div.ad-title a { font-family: arial,helvetica,sans-serif; color: rgb(128, 0, 0); }
+#ad div.ad-text {  }
+#ad div.ad-text a { font-family: arial,helvetica,sans-serif; }
+#ad div.ad-text a:visited {  }
+.spoiler a.quotelink, .spoiler .unkfunc { color: inherit; }
+.exif { display: none; }
+.exif, .exif td { font-family: arial,helvetica,sans-serif; font-size: xx-small; }
+.exif td b { font-weight: 800; text-decoration: underline; font-size: x-small; }
+#header { position: absolute; left: 5px; right: 5px; }
+* html #header { width: 100%; }
+#navtop { left: 0px; float: left; font-size: 11pt; }
+#navtopr { right: 0px; display: block; text-align: right; font-size: 11pt; }

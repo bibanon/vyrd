@@ -1,0 +1,82 @@
+<html><head>
+<style type="text/css">
+<!--
+body {
+	background: #ffe;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+table {
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	padding: 5px;
+	border-collapse:collapse;
+}
+td,th {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	border-collapse:collapse;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+th { background: #fca; }
+
+.redbg { background: #ffe0e0; }
+.bluebg { background: #eef2ff; }
+
+input,select,.fakebutton {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F8F8F8;
+	border: 1px solid #808080;
+	vertical-align: middle;
+}
+select { vertical-align:top; }
+option,optgroup {
+	font-family: Verdana;
+	font-size: 9pt;
+}
+.fakebutton {
+	display:block;
+	height: 16px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	left:0px; right:0px;
+	text-decoration: none;
+	text-align: center;
+}
+* html .fakebutton { /* IE */
+	width:100%;
+	padding-bottom: 2px;
+}
+
+.actions, .actions td { border: none; }
+.actions td {
+	vertical-align: top;
+	padding-right: 5px;
+}
+
+
+.postblock {
+	background-color: #FCA;
+	font-weight: bold;
+	text-align: right;
+}
+-->
+</style>
+<title>reports</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div><b style="float: left"></b>
+<select style="float:right; margin-right:10px;" onchange='window.location="?mode=stats&amp;offset=0&amp;board="+this.options[this.selectedIndex].value+""'><optgroup label="board"><option value="" selected="selected">all</option><option value="a">a</option><option value="adv">adv</option><option value="an">an</option><option value="b">b</option><option value="c">c</option><option value="cgl">cgl</option><option value="ck">ck</option><option value="cm">cm</option><option value="co">co</option><option value="d">d</option><option value="e">e</option><option value="f">f</option><option value="fa">fa</option><option value="fit">fit</option><option value="g">g</option><option value="gif">gif</option><option value="h">h</option><option value="hr">hr</option><option value="i">i</option><option value="ic">ic</option><option value="int">int</option><option value="jp">jp</option><option value="k">k</option><option value="lit">lit</option><option value="m">m</option><option value="mu">mu</option><option value="n">n</option><option value="o">o</option><option value="p">p</option><option value="po">po</option><option value="r">r</option><option value="s">s</option><option value="sci">sci</option><option value="soc">soc</option><option value="sp">sp</option><option value="t">t</option><option value="tg">tg</option><option value="toy">toy</option><option value="trv">trv</option><option value="tv">tv</option><option value="u">u</option><option value="v">v</option><option value="vp">vp</option><option value="w">w</option><option value="wg">wg</option><option value="x">x</option><option value="y">y</option><option value="3">3</option></optgroup></select><select style="float:right; margin-right:10px;" onchange='window.location="?mode=stats&amp;offset=0&amp;sort="+this.options[this.selectedIndex].value+""'><optgroup label="sort"><option selected="selected" value="type">severity</option><option value="count"># of reports</option><option value="date">most recent report</option></optgroup></select>&nbsp;
+
+</div><br><br>
+120997 total reports submitted.
+
+</body></html>

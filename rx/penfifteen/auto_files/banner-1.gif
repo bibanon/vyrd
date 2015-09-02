@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="imageboard,image board,anime,manga,ecchi,hentai,video games,english,japan"/>
+<meta name="robots" content="noarchive"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="expires" content="-1"/>
+<title>4chan - 404 Not Found</title>
+<script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-166538-1","ga_bs":"1"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1870252173/"},atok:"5b9e7a4c6393967d91e3ed633a5a3b9a",zone:"4chan.org",rocket:"0",apps:{"ga_key":{"ua":"UA-166538-1","ga_bs":"1"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=4114775854/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="//static.4chan.org/css/yui.css"/>
+<link rel="stylesheet" type="text/css" href="//static.4chan.org/css/global.css"/>
+<link rel="stylesheet" type="text/css" href="//static.4chan.org/css/error.css"/>
+<link rel="shortcut icon" href="//static.4chan.org/image/favicon-status.ico"/>
+<style type="text/css">#copyright{text-align:center;margin-top:0em;margin-bottom:1em;}.boxcontent{margin-top:10px;}#link:hover{color:red;}.shown{text-align:center;font-size:12pt!important;margin:0 20px 10px 20px;color:#800;font-weight:bold;}</style>
+<script type="text/javascript">
+function check() {
+	var boards = {"boards":[{"board":"3","title":"3DCG"},{"board":"a","title":"Anime \u0026 Manga"},{"board":"adv","title":"Advice"},{"board":"an","title":"Animals \u0026 Nature"},{"board":"b","title":"Random"},{"board":"c","title":"Anime\/Cute"},{"board":"cgl","title":"Cosplay \u0026 EGL"},{"board":"ck","title":"Food \u0026 Cooking"},{"board":"cm","title":"Cute\/Male"},{"board":"co","title":"Comics \u0026 Cartoons"},{"board":"d","title":"Hentai\/Alternative"},{"board":"diy","title":"Do-It-Yourself"},{"board":"e","title":"Ecchi"},{"board":"f","title":"Flash"},{"board":"fa","title":"Fashion"},{"board":"fit","title":"Health \u0026 Fitness"},{"board":"g","title":"Technology"},{"board":"gif","title":"Animated GIF"},{"board":"h","title":"Hentai"},{"board":"hc","title":"Hardcore"},{"board":"hm","title":"Handsome Men"},{"board":"hr","title":"High Resolution"},{"board":"i","title":"Oekaki"},{"board":"ic","title":"Artwork\/Critique"},{"board":"int","title":"International"},{"board":"jp","title":"Otaku Culture"},{"board":"k","title":"Weapons"},{"board":"lit","title":"Literature"},{"board":"m","title":"Mecha"},{"board":"mlp","title":"Pony"},{"board":"mu","title":"Music"},{"board":"n","title":"Transportation"},{"board":"o","title":"Auto"},{"board":"p","title":"Photography"},{"board":"po","title":"Papercraft \u0026 Origami"},{"board":"pol","title":"Politically Incorrect"},{"board":"q","title":"4chan Discussion"},{"board":"r","title":"Request"},{"board":"r9k","title":"ROBOT9001"},{"board":"s","title":"Sexy Beautiful Women"},{"board":"sci","title":"Science \u0026 Math"},{"board":"soc","title":"Social"},{"board":"sp","title":"Sports"},{"board":"t","title":"Torrents"},{"board":"tg","title":"Traditional Games"},{"board":"toy","title":"Toys"},{"board":"trv","title":"Travel"},{"board":"tv","title":"Television \u0026 Film"},{"board":"u","title":"Yuri"},{"board":"v","title":"Video Games"},{"board":"vg","title":"Video Game Generals"},{"board":"vp","title":"Pok\u00e9mon"},{"board":"w","title":"Anime\/Wallpapers"},{"board":"wg","title":"Wallpapers\/General"},{"board":"wsg","title":"Worksafe GIF"},{"board":"x","title":"Paranormal"},{"board":"y","title":"Yaoi"}]};
+	var url = window.location.toString();
+
+
+	if( /boards\.4chan\.org\/([a-z0-9]+)/.test(url) ) {
+		var board = url.match( /boards\.4chan\.org\/([a-z0-9]+)\// )[1];
+		var len = boards.boards.length;
+		// ehehehe ^
+		var b = null;
+
+		for( var i = 0; i < len; i++ ) {
+			b = boards.boards[i];
+
+			if( b.board == board ) {
+				var elem = document.getElementById('backtoboard');
+				elem.innerHTML = '[<a href="//boards.4chan.org/' + b.board + '/">Back to /' + b.board + '/ - ' + b.title + '</a>]';
+				elem.setAttribute('class', 'shown');
+
+				break;
+			}
+		}
+	}
+}
+
+window.onload = check;
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-166538-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+</head>
+<body><script type="text/javascript">
+//<![CDATA[
+new Image().src = "/cdn-cgi/ping?cf[location]=404&cf[js]=1";
+//]]>
+</script>
+<noscript>
+<img src="/cdn-cgi/ping?cf[location]=404&amp;cf[js]=0" alt=""/>
+</noscript>
+<div id="doc">
+<div id="hd">
+<div id="logo">
+<h1><a href="//www.4chan.org/" title="Home">4chan</a></h1>
+</div>
+</div>
+<div id="bd">
+<div class="box-outer top-box">
+<div class="box-inner">
+<div class="boxbar">
+<h2>404 Not Found</h2>
+</div>
+<div class="boxcontent">
+<img src="https://sys.4chan.org/image/error/404/rid.php" alt="404 Not Found"/><br>
+<div id="backtoboard"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="ft">
+<br class="clear-bug"/>
+<div id="copyright">Copyright &copy; 2003-2013 4chan. All rights reserved.</div>
+</div>
+</div>
+</body>
+</html>

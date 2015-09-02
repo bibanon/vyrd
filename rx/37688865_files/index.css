@@ -1,0 +1,51 @@
+/* ::::: http://static.4chan.org/css/yotsublue.9.css ::::: */
+
+body { background: rgb(238, 242, 255) url('http://rx.vyrd.net/37688865_files/fade-blue.png') repeat-x scroll center top; font-family: arial,helvetica,sans-serif; font-size: 10pt; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; color: rgb(0, 0, 0); padding-left: 5px; padding-right: 5px; margin-right: 0px; margin-left: 0px; margin-top: 5px; }
+td { margin: 0pt; padding: 0pt; font-size: 10pt; }
+td.reply { border-style: none solid solid none; border-color: -moz-use-text-color rgb(183, 197, 217) rgb(183, 197, 217) -moz-use-text-color; border-width: medium 1px 1px medium; padding: 2px; }
+blockquote { font-size: 10pt; }
+.doubledash { color: rgb(183, 197, 217); }
+.inputtext { border: 1px solid rgb(170, 170, 170); margin: 0pt 2px 0pt 0pt; padding: 1px 4px; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; font-family: arial,helvetica,sans-serif; font-size: 10pt; }
+input.inputtext { height: 1.75em; }
+td > .inputtext { height: auto; padding-top: 2px; padding-bottom: 3px; }
+.inputtext:focus { border: 1px solid rgb(153, 136, 238); }
+.logo img { border: 1px solid rgb(52, 52, 92); }
+.logo b span { font-family: tahoma; }
+.logo span { font-size: 28px; letter-spacing: -2px; }
+hr { border-style: solid none none; border-color: rgb(183, 197, 217) -moz-use-text-color -moz-use-text-color; border-width: 1px medium medium; height: 0px; }
+.postblock { border: 1px solid rgb(0, 0, 0); padding: 0px 5px; font-size: 10pt; }
+.rules { font-size: 10pt; }
+.rules a { text-decoration: none; }
+form a img { margin-top: 3px; }
+.deletebuttons { text-align: right; }
+.deletebuttons br { display: none; }
+a, a:visited { color: rgb(52, 52, 92); }
+a:hover { color: rgb(221, 0, 0); }
+a.quotelink { color: rgb(221, 0, 0); }
+.logo { clear: both; text-align: center; font-size: 24pt; color: rgb(175, 10, 15); width: 100%; }
+form { margin-top: 0px; }
+.rules { width: 468px; font-size: 10px; }
+.rules a, .rules a:visited, .rules a:link {  }
+.rules > li { list-style-type: none; list-style-image: none; list-style-position: outside; }
+.rules > li:before { content: "• "; }
+.postblock { background: rgb(153, 136, 238) none repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; color: rgb(0, 0, 0); font-weight: 800; }
+.unkfunc { color: rgb(120, 153, 34); }
+.filesize { text-decoration: none; }
+.filesize span, span.postername, span.filetitle, span.commentpostername { unicode-bidi: embed; }
+.filetitle, .replytitle { background: inherit inherit inherit inherit inherit; -moz-background-clip: inherit; -moz-background-origin: inherit; -moz-background-inline-policy: inherit; color: rgb(15, 12, 93); font-weight: 800; }
+.postername, .commentpostername { background: inherit inherit inherit inherit inherit; -moz-background-clip: inherit; -moz-background-origin: inherit; -moz-background-inline-policy: inherit; color: rgb(17, 119, 67); font-weight: 800; }
+.postertrip { background: inherit inherit inherit inherit inherit; -moz-background-clip: inherit; -moz-background-origin: inherit; -moz-background-inline-policy: inherit; color: rgb(34, 136, 84); }
+.reply { background: rgb(214, 218, 240) none repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; color: rgb(0, 0, 0); }
+.doubledash { vertical-align: top; clear: both; float: left; }
+a.quotejs:active, a.quotejs:link, a.quotejs:visited { color: rgb(0, 0, 0); text-decoration: none; }
+a.quotejs:hover { color: rgb(221, 0, 0); }
+#header { position: absolute; top: 2px; left: 5px; right: 5px; }
+#navtop, #navbot { left: 0px; float: left; }
+#navtopr, #navbotr { right: 0px; display: block; float: right; text-align: right; }
+#header, #navbot, #navbotr { font-size: 9pt; color: rgb(136, 153, 170); }
+#header a, #navbot a, #navbotr a, .pages td a { padding: 1px; font-weight: normal; text-decoration: none; color: rgb(52, 52, 92); }
+#header a:hover, #navbot a:hover, #navbotr a:hover, .pages td a:hover { color: rgb(221, 0, 0); }
+#footer { clear: both; padding-top: 10px; }
+#footer center font { font-size: 7pt; }
+td.deletebuttons input.checkbox { margin: 1px 2px; }
+div.logo img { margin: 5px 0px; }

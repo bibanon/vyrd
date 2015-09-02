@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /lgbt/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=11</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:39:46 GMT</pubDate>
+    
+    <item>
+      <title>mitt romney's boy pussy speech</title>
+      <link>http://i.vyrd.net/details.php?image_id=20</link>
+      <pubDate>Wed, 17 Jul 2013 12:39:17 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=11">/lgbt/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/11/romney-boypussy.png" length="12015" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=20</guid>
+    </item>
+
+  </channel>
+</rss>

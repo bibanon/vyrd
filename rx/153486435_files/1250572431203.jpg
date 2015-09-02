@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Windows (vers 12 April 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="imageboard,image board,anime,manga,ecchi,hentai,video games,english,japan" />
+  <meta name="robots" content="noarchive" />
+  
+<title>4chan - 404</title><link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/reset-fonts-grids/reset-fonts-grids.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.4.0/build/base/base-min.css" /> -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/menu/assets/skins/sam/menu.css" />
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/container/assets/container.css" />
+<link rel="stylesheet" type="text/css" href="http://content.4chan.org/css/global.css" />
+<link rel="stylesheet" type="text/css" href="http://content.4chan.org/css/error.css" />
+
+</head>
+
+<body>
+  <div id="doc">
+    <div id="hd">
+      <div id="logo">
+        <h1><a href="http://www.4chan.org/" title="Home">4chan</a></h1>
+  
+        <div id="slogan">
+          <h2>FOUR MORE YEARS!</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="bd">
+      <div class="box-outer top-box" >
+        <div class="box-inner">
+          <div class="boxbar">
+            <h2>404 - Not Found</h2>
+                      </div>
+          <div class="boxcontent">
+            <a href="http://www.4chan.org/"><img
+              src="http://www.4chan.org/error/404/rid.php" alt="404"
+              style="border: dashed black; border-radius: 1px;" /></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="ft">
+      <br class="clear-bug" />
+      <div id="copyright">Copyright &copy; 2003-2009 4chan. All rights reserved.</div>
+    </div>
+  </div>
+</body>
+</html>

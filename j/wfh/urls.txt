@@ -1,0 +1,2 @@
+http://4chan.wrathfilledhate.net/nojanitormenuhere/janitor_4chanboards.xml
+http://4chan.wrathfilledhate.net/nojanitormenuhere/janitor_menu_layout_default.xml

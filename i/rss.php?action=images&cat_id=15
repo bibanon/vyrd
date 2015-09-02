@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+  <channel>
+
+    <title>i.vyrd - 4chan image gallery - /sp/</title>
+    <link>http://i.vyrd.net/categories.php?cat_id=15</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Fri, 20 Feb 2015 06:40:07 GMT</pubDate>
+    
+    <item>
+      <title>dangerously cheesy</title>
+      <link>http://i.vyrd.net/details.php?image_id=38</link>
+      <pubDate>Wed, 17 Jul 2013 17:37:41 GMT</pubDate>
+      <description><![CDATA[]]></description>
+          <category domain="http://i.vyrd.net/categories.php?cat_id=15">/sp/</category>
+              <author><![CDATA[example@example.com (gil)]]></author>
+              <enclosure url="http://i.vyrd.net/data/thumbnails/15/sp-dangerously-cheesy.png" length="7670" type="image/png" />
+          <guid isPermaLink="false">http://i.vyrd.net/details.php?image_id=38</guid>
+    </item>
+
+  </channel>
+</rss>

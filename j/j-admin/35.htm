@@ -1,0 +1,461 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- meta HTTP-EQUIV="pragma" CONTENT="no-cache" -->
+<style type="text/css">
+<!--
+tr,td,th { font-family: Verdana; font-size: 10pt }
+a { text-decoration: none; }
+a:hover { color:#DD0000; }
+/* span { font-size: 20pt; } */
+small { font-size:10pt }
+table {
+	border: 1px #FFFFEE solid;
+	border-spacing: 0px;
+	padding: 0px;
+	margin:0px;
+	border-collapse:collapse;
+}
+td {
+	border: 1px #FFFFEE solid;
+	border-spacing: 0px;
+	padding: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+input,select,textarea {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F8F8F8;
+	border: 1px solid #808080;
+}
+-->
+</style>
+<script language="JavaScript">
+function checkBrowser(){
+	this.ver=navigator.appVersion
+	this.dom=document.getElementById?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+	this.ie4=(document.all && !this.dom)?1:0;
+	this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+	return this
+}
+bw=new checkBrowser()
+
+function popup(vars) {
+  day = new Date();
+	id = day.getTime();
+	var newWindow;
+	var props = 'scrollBars=yes,resizable=no,toolbar=no,menubar=no,location=no,directories=no,width=400,height=360';
+	eval('popup'+id+' = window.open("admin.php?mode=admin&"+vars, "'+id+'", props);');
+}
+
+function more(div,div2,nest){
+	obj=bw.dom?document.getElementById(div).style:bw.ie4?document.all[div].style:bw.ns4?nest?document[nest].document[div]:document[div]:0;
+	obj2=bw.dom?document.getElementById(div2).style:bw.ie4?document.all[div2].style:bw.ns4?nest?document[nest].document[div2]:document[div2]:0;
+	if(obj.display=='') {
+		obj.display='none';
+		obj2.display='none';
+	} else {
+		obj.display='';
+		obj2.display='';
+	}
+}
+
+function swap(div,div2) {
+	var el = document.getElementById(div);
+	var el2 = document.getElementById(div2);
+	var tmp = el.style.display;
+	el.style.display = el2.style.display;
+	el2.style.display = tmp;
+}
+
+</script>
+<title>/j/ - Janitor &amp; Moderator Discussion</title>
+<link href="35_files/janichan.css" type="text/css" rel="stylesheet"></head>
+<body bgcolor="#FFFFEE" link="#0000EE" text="#800000" vlink="#0000EE">
+<div id="header"><span id="navtop">
+[<a href="http://boards.4chan.org/a/" title="Anime &amp; Manga">a</a> /
+<a href="http://boards.4chan.org/b/" title="Random">b</a> /
+<a href="http://boards.4chan.org/c/" title="Anime/Cute">c</a> /
+<a href="http://boards.4chan.org/d/" title="Hentai/Alternative">d</a> /
+<a href="http://boards.4chan.org/e/" title="Ecchi">e</a> /
+<a href="http://boards.4chan.org/f/" title="Flash">f</a> /
+<a href="http://boards.4chan.org/g/" title="Technology">g</a> /
+<a href="http://boards.4chan.org/gif/" title="Animated GIF">gif</a> /
+<a href="http://boards.4chan.org/h/" title="Hentai">h</a> /
+<a href="http://boards.4chan.org/hr/" title="High Resolution">hr</a> /
+<a href="http://boards.4chan.org/k/" title="Weapons">k</a> /
+<a href="http://boards.4chan.org/m/" title="Mecha">m</a> /
+<a href="http://boards.4chan.org/o/" title="Auto">o</a> /
+<a href="http://boards.4chan.org/p/" title="Photo">p</a> /
+<a href="http://boards.4chan.org/r/" title="Request">r</a> /
+<a href="http://boards.4chan.org/s/" title="Sexy Beautiful Women">s</a> /
+<a href="http://boards.4chan.org/t/" title="Torrents">t</a> /
+<a href="http://boards.4chan.org/u/" title="Yuri">u</a> /
+<a href="http://boards.4chan.org/v/" title="Video Games">v</a> /
+<a href="http://boards.4chan.org/w/" title="Anime/Wallpapers">w</a> /
+<a href="http://boards.4chan.org/wg/" title="Wallpapers/General">wg</a>]
+
+[<a href="http://boards.4chan.org/i/" title="Oekaki">i</a> /
+<a href="http://boards.4chan.org/ic/" title="Artwork/Critique">ic</a>]
+
+[<a href="http://boards.4chan.org/cm/" title="Cute/Male">cm</a> /
+<a href="http://boards.4chan.org/y/" title="Yaoi">y</a>]
+
+[<a href="http://boards.4chan.org/3/" title="3DCG">3</a> /
+<a href="http://boards.4chan.org/adv/" title="Advice">adv</a> /
+<a href="http://boards.4chan.org/an/" title="Animals &amp; Nature">an</a> /
+<a href="http://boards.4chan.org/cgl/" title="Cosplay &amp; EGL">cgl</a> /
+<a href="http://boards.4chan.org/ck/" title="Food &amp; Cooking">ck</a> /
+<a href="http://boards.4chan.org/co/" title="Comics &amp; Cartoons">co</a> /
+<a href="http://boards.4chan.org/fa/" title="Fashion">fa</a> /
+<a href="http://boards.4chan.org/fit/" title="Health &amp; Fitness">fit</a> /
+<a href="http://boards.4chan.org/int/" title="International">int</a> /
+<a href="http://boards.4chan.org/jp/" title="Otaku Culture">jp</a> /
+<a href="http://boards.4chan.org/lit/" title="Literature">lit</a> /
+<a href="http://boards.4chan.org/mu/" title="Music">mu</a> /
+<a href="http://boards.4chan.org/n/" title="Transportation">n</a> /
+<a href="http://boards.4chan.org/po/" title="Papercraft &amp; Origami">po</a> /
+<a href="http://boards.4chan.org/sci/" title="Science &amp; Math">sci</a> /
+<a href="http://boards.4chan.org/soc/" title="Social">soc</a> /
+<a href="http://boards.4chan.org/sp/" title="Sports">sp</a> /
+<a href="http://boards.4chan.org/tg/" title="Traditional Games">tg</a> /
+<a href="http://boards.4chan.org/toy/" title="Toys">toy</a> /
+<a href="http://boards.4chan.org/trv/" title="Travel">trv</a> /
+<a href="http://boards.4chan.org/tv/" title="Television &amp; Film">tv</a> /
+<a href="http://boards.4chan.org/vp/" title="Pokémon">vp</a> /
+<a href="http://boards.4chan.org/x/" title="Paranormal">x</a>]
+
+[<a href="http://rs.4chan.org/" title="Rapidshares">rs</a>]
+
+[<a href="http://status.4chan.org/" title="4chan Status">status</a> /
+<span style="font-size: 90%;"><a href="http://formspring.me/4chan" title="4chan Q&amp;A">?</a></span> /
+<span style="font-size: 90%;"><a href="http://twitter.com/4chan" title="4chan Twitter">@</a></span>]
+
+</span><span id="navtopr">[<a href="http://www.4chan.org/" target="_top">Home</a>]</span></div><br>
+
+<p align="center"><font color="#800000" size="5">
+<b><font style="font-size: 20pt;">/j/ - Janitor &amp; Moderator Discussion</font></b></font>
+</p><hr size="1" width="90%">
+<span style="float:left;">[<a href="http://boards.4chan.org/j/">Return</a>] [<a href="https://sys.4chan.org/j/imgboard.php">Update</a>] [<a href="https://sys.4chan.org/j/admin.php?admin=cleanup">Cleanup</a>]
+[<a href="https://sys.4chan.org/j/admin.php?admin=logout">Logout</a>] <!-- <span style="position: absolute; right: 10px;"><button value="Reload" onClick="location.href='admin.php'"></span> -->
+</span><select style="float:right;" onchange="var x=this.options[this.selectedIndex].value;x&amp;&amp;(window.location=x)"><option selected="selected" value="http://boards.4chan.org/3/admin.php">3</option>
+<option value="http://boards.4chan.org/a/admin.php">a</option>
+<option value="http://boards.4chan.org/adv/admin.php">adv</option>
+<option value="http://boards.4chan.org/an/admin.php">an</option>
+<option value="http://boards.4chan.org/b/admin.php">b</option>
+<option value="http://boards.4chan.org/c/admin.php">c</option>
+<option value="http://boards.4chan.org/cgl/admin.php">cgl</option>
+<option value="http://boards.4chan.org/ck/admin.php">ck</option>
+<option value="http://boards.4chan.org/cm/admin.php">cm</option>
+<option value="http://boards.4chan.org/co/admin.php">co</option>
+<option value="http://boards.4chan.org/d/admin.php">d</option>
+<option value="http://boards.4chan.org/e/admin.php">e</option>
+<option value="http://boards.4chan.org/f/admin.php">f</option>
+<option value="http://boards.4chan.org/fa/admin.php">fa</option>
+<option value="http://boards.4chan.org/fit/admin.php">fit</option>
+<option value="http://boards.4chan.org/g/admin.php">g</option>
+<option value="http://boards.4chan.org/gif/admin.php">gif</option>
+<option value="http://boards.4chan.org/h/admin.php">h</option>
+<option value="http://boards.4chan.org/hr/admin.php">hr</option>
+<option value="http://boards.4chan.org/i/admin.php">i</option>
+<option value="http://boards.4chan.org/ic/admin.php">ic</option>
+<option value="http://boards.4chan.org/int/admin.php">int</option>
+<option value="http://boards.4chan.org/jp/admin.php">jp</option>
+<option value="http://boards.4chan.org/k/admin.php">k</option>
+<option value="http://boards.4chan.org/lit/admin.php">lit</option>
+<option value="http://boards.4chan.org/m/admin.php">m</option>
+<option value="http://boards.4chan.org/mu/admin.php">mu</option>
+<option value="http://boards.4chan.org/n/admin.php">n</option>
+<option value="http://boards.4chan.org/o/admin.php">o</option>
+<option value="http://boards.4chan.org/p/admin.php">p</option>
+<option value="http://boards.4chan.org/po/admin.php">po</option>
+<option value="http://boards.4chan.org/r/admin.php">r</option>
+<option value="http://boards.4chan.org/s/admin.php">s</option>
+<option value="http://boards.4chan.org/sci/admin.php">sci</option>
+<option value="http://boards.4chan.org/soc/admin.php">soc</option>
+<option value="http://boards.4chan.org/sp/admin.php">sp</option>
+<option value="http://boards.4chan.org/t/admin.php">t</option>
+<option value="http://boards.4chan.org/tg/admin.php">tg</option>
+<option value="http://boards.4chan.org/toy/admin.php">toy</option>
+<option value="http://boards.4chan.org/trv/admin.php">trv</option>
+<option value="http://boards.4chan.org/tv/admin.php">tv</option>
+<option value="http://boards.4chan.org/u/admin.php">u</option>
+<option value="http://boards.4chan.org/v/admin.php">v</option>
+<option value="http://boards.4chan.org/vp/admin.php">vp</option>
+<option value="http://boards.4chan.org/w/admin.php">w</option>
+<option value="http://boards.4chan.org/wg/admin.php">wg</option>
+<option value="http://boards.4chan.org/x/admin.php">x</option>
+<option value="http://boards.4chan.org/y/admin.php">y</option>
+</select><br><table width="100%"><tbody><tr><th bgcolor="#E08000">
+<font color="#FFFFFF">Manager Mode</font>
+</th></tr></tbody></table>
+<form action="http://j.vyrd.net/j-admin/admin.php" method="POST">
+<input name="mode" value="admin" type="hidden">
+<input name="admin" value="del" type="hidden">
+<p>Go to ID(s): <input name="res" size="15" type="text">&nbsp;<input value="Go" type="submit"></p></form>
+<input onclick='location.search="?threadmode=1"' value="Group by thread" type="button"><center><p></p><form action="http://j.vyrd.net/j-admin/imgboard.php" method="POST"><input name="mode" value="admindel" type="hidden"><input name="pwd" value="DISHSIS" type="hidden"><input value="Delete" type="submit"> <input value="Reset" type="reset">[<input name="onlyimgdel" value="on" type="checkbox"><!--checked-->File Only]<p><table border="1" cellspacing="0">
+<tbody><tr align="center" bgcolor="#6080f6"><td width="1%">&nbsp;</td><td width="1%"><b>#</b></td><td width="1%"><b>Time</b></td><td width="10%"><b>Name</b></td><td width="15%"><b>Subject</b></td><td width="15%"><b>Comment</b></td><td width="40%"><b>Host</b></td><td width="5%">&nbsp;</td></tr>
+<tr bgcolor="#d0d0f0"><td><input id="fake532" name="532" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=532#532" target="_blank">532</a></td><td><small>12/03&nbsp;00:00</small></td><td title="nuschultz"><b>nuschultz</b></td><td title=""></td><td><small id="short532" ondblclick='swap("full532","short532")' title="Double-click to show full comment">i would love a cou...</small><small id="full532" ondblclick='swap("full532","short532")' style="display:none;">i
+ would love a couple more janitors on /g/.  assuming you decide to keep 
+it since apparently im a horrible janitor (because i have a life and 
+cant babysit the board 24/7).  so since I cant be here constantly, can 
+we add more janitors?</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('532a','532b');" type="button"></td>
+</tr>
+<tr id="532a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="532b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=532');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=532');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake531" name="531" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=531#531" target="_blank">531</a></td><td><small>12/02&nbsp;16:41</small></td><td title="Quote"><b>Quote</b></td><td title=""></td><td><small id="short531" ondblclick='swap("full531","short531")' title="Double-click to show full comment">after reflecting o...</small><small id="full531" ondblclick='swap("full531","short531")' style="display:none;">after
+ reflecting on my idea for a while i realized, not only would /r/ 
+probably ignore it and post unrelated pics anyway, it would be a bitch 
+to enforce.  so nevermind.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('531a','531b');" type="button"></td>
+</tr>
+<tr id="531a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="531b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=531');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=531');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake530" name="530" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=530#530" target="_blank">530</a></td><td><small>12/02&nbsp;15:55</small></td><td title="Bachus"><b>Bachus</b></td><td title=""></td><td><small id="short530" ondblclick='swap("full530","short530")' title="Double-click to show full comment">&gt;&gt;528 &gt;&gt;529  Plus,...</small><small id="full530" ondblclick='swap("full530","short530")' style="display:none;">&gt;&gt;528<br>&gt;&gt;529<br><br>Plus,
+ if they post an unrelated picture and don't get their /r/ filled 
+because the thread becomes a discussion of said pic, then that's  the 
+OP's problem. He shouldn't have used an unrelated picture.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('530a','530b');" type="button"></td>
+</tr>
+<tr id="530a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="530b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=530');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=530');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake529" name="529" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=529#529" target="_blank">529</a></td><td><small>12/02&nbsp;15:38</small></td><td title="Foone"><b>Foone</b></td><td title=""></td><td><small id="short529" ondblclick='swap("full529","short529")' title="Double-click to show full comment">&gt;&gt;528 My impressio...</small><small id="full529" ondblclick='swap("full529","short529")' style="display:none;">&gt;&gt;528<br>My
+ impression from boards that allow text-only threadstarters (like mine) 
+is that they get skimmed over 100% of the time. I've yet to see a thread
+ that started with a text post get anywhere. <br><br>I also think it ruins the look of the board, as you now have mixed text and image threads.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('529a','529b');" type="button"></td>
+</tr>
+<tr id="529a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="529b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=529');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=529');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake527" name="527" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=527#527" target="_blank">527</a></td><td><small>12/02&nbsp;13:39</small></td><td title="NiGHTS"><b>NiGHTS</b></td><td title=""></td><td><small id="short527" ondblclick='swap("full527","short527")' title="Double-click to show full comment">&gt;&gt;518  Agreed. I e...</small><small id="full527" ondblclick='swap("full527","short527")' style="display:none;">&gt;&gt;518<br><br>Agreed.
+ I emailed moot some suggestions but here is what I had in mind for 
+those who want to know: I want to attempt to make /cgl/ into more of a 
+community meaning the focus will be less on pictures of decent cosplay 
+and more of on the posters individual work. I feel that pictures should 
+only be posted as reference material and not to start drama...<br><br>But
+ we already know that. It's going to take time to get people to stop 
+flaming Adella every day even though we've been through it so many 
+times..</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('527a','527b');" type="button"></td>
+</tr>
+<tr id="527a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="527b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=527');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=527');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake526" name="526" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=526#526" target="_blank">526</a></td><td><small>12/02&nbsp;01:01</small></td><td title="Kobra"><b>Kobra</b></td><td title=""></td><td><small id="short526" ondblclick='swap("full526","short526")' title="Double-click to show full comment">&gt;&gt;523  You make a ...</small><small id="full526" ondblclick='swap("full526","short526")' style="display:none;">&gt;&gt;523<br><br>You make a good point, I retract my argument.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('526a','526b');" type="button"></td>
+</tr>
+<tr id="526a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="526b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=505">505</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=526');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=526');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake525" name="525" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=525#525" target="_blank">525</a></td><td><small>12/01&nbsp;23:17</small></td><td title="geckoagua"><b>geckoagua</b></td><td title=""></td><td><small id="short525" ondblclick='swap("full525","short525")' title="Double-click to show full comment">&gt;&gt;520  /v/ occasio...</small><small id="full525" ondblclick='swap("full525","short525")' style="display:none;">&gt;&gt;520<br><br>/v/
+ occasionally gets the stupid 'unite /b/rothers' invasion posts that 
+links to all the invasion boards.  I'm guessing that's about 80% of 
+where the copypasta flood comes from.  The bitch is people doing that 
+know very well how to go through proxy, so in that way, they're sort of 
+right in thinking they're impervious to bans.  Of course, the solution 
+to that is something that goes against the idea of 4chan so it's never 
+going to happen, I'm just saying is all.<br><br>Somewhere along the line
+ people began associating /v/ with /b/ and I don't think there's much 
+you can do to stop it, minus an account system with delayed activation.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('525a','525b');" type="button"></td>
+</tr>
+<tr id="525a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="525b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=525');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=525');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake524" name="524" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=524#524" target="_blank">524</a></td><td><small>12/01&nbsp;20:43</small></td><td title="Dhomochevsky"><b>Dhomochev...</b></td><td title=""></td><td><small id="short524" ondblclick='swap("full524","short524")' title="Double-click to show full comment">Requests and loli ...</small><small id="full524" ondblclick='swap("full524","short524")' style="display:none;">Requests
+ and loli over in /h/. Plus the loli-drama that's uaually kick-started 
+by someone starting a Disgaea thread.  It occasionally happens with 
+other series, but very rarely.  Post an Etna or Flonne pic, however and 
+the thread will always degenerate into arguments about the characters' 
+ages being an indication of their lolidom.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('524a','524b');" type="button"></td>
+</tr>
+<tr id="524a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="524b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=524');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=524');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake523" name="523" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=523#523" target="_blank">523</a></td><td><small>12/01&nbsp;18:35</small></td><td title="Dr. Stein"><b>Dr. Stein</b></td><td title=""></td><td><small id="short523" ondblclick='swap("full523","short523")' title="Double-click to show full comment">&gt;&gt;511 Sorry, I nev...</small><small id="full523" ondblclick='swap("full523","short523")' style="display:none;">&gt;&gt;511<br>Sorry,
+ I never save the pictures. (I agree with Unnes about death's lack of 
+cuteness) The next time a thread pops up I'll post some here. But like I
+ said, the pictures are tame for 4chan's standards. Most of the time it 
+is a girl with her eyes closed and her wrist bleeding, or a girl hanging
+ from a rope (but not all purple and bulgy-eyed).<br><br>Consider this 
+scenario: if you were looking at /c/ at work (let's hope nobody really 
+does) and a passerby saw one of these threads, they would think you were
+ a fucking weirdo, regardless of how "tasteful" the art itself is. I 
+don't think it is good for the board.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('523a','523b');" type="button"></td>
+</tr>
+<tr id="523a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="523b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=505">505</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=523');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=523');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake522" name="522" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=522#522" target="_blank">522</a></td><td><small>12/01&nbsp;17:46</small></td><td title="Kobra"><b>Kobra</b></td><td title=""></td><td><small id="short522" ondblclick='swap("full522","short522")' title="Double-click to show full comment">My only problem in...</small><small id="full522" ondblclick='swap("full522","short522")' style="display:none;">My only problem in /sp/--<br><br>There
+ are no problems. If I'm lucky I'll find one borderline racist post or 
+some troll a day, MAYBE. Otherwise it's just boring and slow.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('522a','522b');" type="button"></td>
+</tr>
+<tr id="522a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="522b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=522');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=522');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake521" name="521" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=521#521" target="_blank">521</a></td><td><small>12/01&nbsp;16:28</small></td><td title="dis.astranagant"><b>dis.astra...</b></td><td title=""></td><td><small id="short521" ondblclick='swap("full521","short521")' title="Double-click to show full comment">The creation of a ...</small><small id="full521" ondblclick='swap("full521","short521")' style="display:none;">The
+ creation of a tabletop game board would solve the only real problem in 
+/m/ as of late.  We get a lot of threads where people post random shit 
+that has nothing to do with mecha and try to justify it by claiming it's
+ from some random tabletop game (usually warhammer 40k, but not always) 
+that happens to have some robots in it.  The threads often devolve into 
+blatant troll wars, as the regular /m/ crowd and the tabletop people 
+can't seem to leave each other's threads alone.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('521a','521b');" type="button"></td>
+</tr>
+<tr id="521a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="521b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=521');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=521');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake520" name="520" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=520#520" target="_blank">520</a></td><td><small>12/01&nbsp;16:19</small></td><td title="Shisutaabooi"><b>Shisutaab...</b></td><td title=""></td><td><small id="short520" ondblclick='swap("full520","short520")' title="Double-click to show full comment">&gt;&gt;512 Usually /v/ ...</small><small id="full520" ondblclick='swap("full520","short520")' style="display:none;">&gt;&gt;512<br>Usually
+ /v/ isn't too bad, but alot of people like to push the boundaries of 
+worksafe. We all know about that 'damn borderline tifa picture', as a 
+prime example. Other than that, there's the absolute abundance of 
+copy-pasta trollbait and the people who think spoilers are a fantastic 
+way to get attention. But /v/ tends to be fairly well renowned as a 
+trollwar forum anyway, so some of this is to be expected. The general 
+problem seems to be people breaking the rules and thinking they're 
+impervious to consequences - flooding for example or saging threads over
+ and over for no real reason.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('520a','520b');" type="button"></td>
+</tr>
+<tr id="520a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="520b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=520');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=520');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake519" name="519" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=519#519" target="_blank">519</a></td><td><small>12/01&nbsp;15:54</small></td><td title="Zorpheus"><b>Zorpheus</b></td><td title=""></td><td><small id="short519" ondblclick='swap("full519","short519")' title="Double-click to show full comment">The problem in /h/...</small><small id="full519" ondblclick='swap("full519","short519")' style="display:none;">The
+ problem in /h/ is and has always been an insane number of request 
+threads.  I seem to be requesting bans for 5 people a day at least.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('519a','519b');" type="button"></td>
+</tr>
+<tr id="519a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="519b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=519');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=519');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake518" name="518" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=518#518" target="_blank">518</a></td><td><small>12/01&nbsp;15:22</small></td><td title="maggot"><b>maggot</b></td><td title=""></td><td><small id="short518" ondblclick='swap("full518","short518")' title="Double-click to show full comment">&gt;&gt;515 I hate /cgl/...</small><small id="full518" ondblclick='swap("full518","short518")' style="display:none;">&gt;&gt;515<br>I hate /cgl/ with a passion since thats all it's turned into.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('518a','518b');" type="button"></td>
+</tr>
+<tr id="518a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="518b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=518');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=518');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake517" name="517" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=517#517" target="_blank">517</a></td><td><small>12/01&nbsp;13:35</small></td><td title="AT_DA"><b>AT_DA</b></td><td title=""></td><td><small id="short517" ondblclick='swap("full517","short517")' title="Double-click to show full comment">Hmm, /t isn't terr...</small><small id="full517" ondblclick='swap("full517","short517")' style="display:none;">Hmm,
+ /t isn't terrible. Many people still seem to think starting rs threads 
+is fine but I just delete them. It could use some features like torrent 
+uploading (not tracking, just hosting the torrent) because rapidshitting
+ the torrent kind of defeats the purpose to those of us who hate fs 
+services.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('517a','517b');" type="button"></td>
+</tr>
+<tr id="517a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="517b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=517');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=517');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake516" name="516" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=516#516" target="_blank">516</a></td><td><small>12/01&nbsp;11:12</small></td><td title="tsukatu"><b>tsukatu</b></td><td title=""></td><td><small id="short516" ondblclick='swap("full516","short516")' title="Double-click to show full comment">Problems in /wg/ a...</small><small id="full516" ondblclick='swap("full516","short516")' style="display:none;">Problems
+ in /wg/ aren't terribly significant. The trouble is mostly people 
+sage'ing a thread just because THEY don't like the content. It usually 
+has nothing to do with the quality of the wallpaper or anything, either;
+ "sage because Halo sucks" or "sage for abstract bullshit." Along those 
+lines.<br>There are also a handful of ineffably retarded wallpapers 
+posted as a joke, the most popular one being the computer tower over a 
+swirly blue background with Linkin Park lyrics on the side.<br>Other 
+than that, the biggest annoyance is when people post gorgeous hi-res 
+pictures that have oblong resolutions that wouldn't fit nicely onto a 
+monitor, like an image three or four times as tall as it is wide.<br>Oh,
+ and threads like, "of the 74 pictures I'm about to post, 3 of them are 
+non-anime, so I figured this entire collection doesn't belong in /w/."</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('516a','516b');" type="button"></td>
+</tr>
+<tr id="516a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="516b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=516');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=516');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake515" name="515" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=515#515" target="_blank">515</a></td><td><small>12/01&nbsp;11:06</small></td><td title="NiGHTS"><b>NiGHTS</b></td><td title=""></td><td><small id="short515" ondblclick='swap("full515","short515")' title="Double-click to show full comment">The main issue wit...</small><small id="full515" ondblclick='swap("full515","short515")' style="display:none;">The
+ main issue with /cgl/ is the drama that is started up nearly every day 
+with threads about Adella, Francesca Dani, etc. I will email you some  
+of my thoughts moot. Sorry I haven't done so earlier.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('515a','515b');" type="button"></td>
+</tr>
+<tr id="515a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="515b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=515');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=515');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake514" name="514" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=514#514" target="_blank">514</a></td><td><small>12/01&nbsp;08:12</small></td><td title="Lana"><b>Lana</b></td><td title=""></td><td><small id="short514" ondblclick='swap("full514","short514")' title="Double-click to show full comment">Macros have, in a ...</small><small id="full514" ondblclick='swap("full514","short514")' style="display:none;">Macros
+ have, in a way, become a little out of hand in /an/. People have 
+started making them for basically every picture they have, and the 
+result is always painfully unfunny and pretty annoying. I definitely 
+don't like the idea of banning animal related macros (like the days of 
+/n/) but I'm not sure if I should be drawing a line there or not. A few 
+users have complained outright but generally they just make fun of the 
+failed attempt at humor and things can potentially get ugly. <br><br>Also,
+ we don't have a set of rules yet, but I've been enforcing what I think 
+they should be the whole time. Basically: no violence of any sort, and 
+nothing sexual in any way shape or form (furry, real animal or 
+otherwise.)</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('514a','514b');" type="button"></td>
+</tr>
+<tr id="514a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="514b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=514');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=514');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake513" name="513" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=513#513" target="_blank">513</a></td><td><small>12/01&nbsp;06:21</small></td><td title="Anonymous"><b>Anonymous</b></td><td title=""></td><td><small id="short513" ondblclick='swap("full513","short513")' title="Double-click to show full comment">One thing that div...</small><small id="full513" ondblclick='swap("full513","short513")' style="display:none;">One
+ thing that divides /cm/ and starts fights is whether or not an image is
+ allowed if it contains a female alongside a male, like straight couples
+ and group shots. The majority doesn't care as long as a male is in the 
+picture and as long as he isn't just a speck in the background, but 
+there are a few who bitch. These are usually the same dramafags who trow
+ a hissy fit in trap threads, and since the rules say "shounen-ai is 
+permitted" they take that to mean ONLY shounen-ai is allowed, which is 
+stupid.<br><br>Personally I'd say straight couples could go in both /c/ 
+and /cm/, because if someone makes a thread for a character, 90% of the 
+time they couldn't care less if that character is in a group or 
+alongside a character of the opposite sex. If someone absolutely can't 
+stand having a girl stand next to a guy, they can ask that no hetero 
+couples be posted in their thread.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('513a','513b');" type="button"></td>
+</tr>
+<tr id="513a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="513b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=512">512</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=513');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=513');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake512" name="512" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=512" target="_blank" style="font-weight: bold;">512</a></td><td><small>12/01&nbsp;03:03</small></td><td title="moot"><b>moot</b></td><td title="Problems on your particular board(s).">Problems ...</td><td><small id="short512" ondblclick='swap("full512","short512")' title="Double-click to show full comment">I need to know exa...</small><small id="full512" ondblclick='swap("full512","short512")' style="display:none;">I
+ need to know exactly what is plaguing the users these days on each 
+board. I am sick of hearing about issues that have been brewing for 
+months and still haven't been brought to my attention. This isn't your 
+fault--I'm annoyed that so few people bother to email me with these 
+problems. Instead most of them choose to turn the board into a war-zone 
+which eventually explodes and becomes a problem for me.<br><br>Anyway. If there is anything in particular that you feel needs addressing on your particular board, post it here!<br><br>Note:
+ Yes I know the trial boards still don't have rules. I think I've 
+received *ONE* email full of suggestions from a janitor even though I've
+ asked multiple times for them. I'll get around to it when I get around 
+to it.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('512a','512b');" type="button"></td>
+</tr>
+<tr id="512a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="2" align="left"><b>Text-only thread</b></td><td colspan="2">&nbsp;</td><td colspan="2">&nbsp;</td></tr><tr id="512b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="2">&nbsp;</td><td colspan="2">&nbsp;</td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=512');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=512');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Thread options" onclick="popup('admin=opt&amp;id=512');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Replies" onclick="location.href='?thread=512'" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake511" name="511" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=511#511" target="_blank">511</a></td><td><small>12/01&nbsp;02:54</small></td><td title="Kobra"><b>Kobra</b></td><td title=""></td><td><small id="short511" ondblclick='swap("full511","short511")' title="Double-click to show full comment">&gt;&gt;509  Well that's...</small><small id="full511" ondblclick='swap("full511","short511")' style="display:none;">&gt;&gt;509<br><br>Well that's disputeable. Can someone post the pictures in question so we can further determine the circumstances?</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('511a','511b');" type="button"></td>
+</tr>
+<tr id="511a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="511b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=505">505</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=511');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=511');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake510" name="510" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=510#510" target="_blank">510</a></td><td><small>12/01&nbsp;02:52</small></td><td title="Quote"><b>Quote</b></td><td title=""></td><td><small id="short510" ondblclick='swap("full510","short510")' title="Double-click to show full comment">"4chan News" link ...</small><small id="full510" ondblclick='swap("full510","short510")' style="display:none;">"4chan News" link appears to be broken in the beta</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('510a','510b');" type="button"></td>
+</tr>
+<tr id="510a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="510b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=215">215</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=510');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=510');" type="button"></td></tr><tr bgcolor="#f0d0d0"><td><input id="fake509" name="509" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=509#509" target="_blank">509</a></td><td><small>12/01&nbsp;02:49</small></td><td title="unnes"><b>unnes</b></td><td title=""></td><td><small id="short509" ondblclick='swap("full509","short509")' title="Double-click to show full comment">I only browse /c/ ...</small><small id="full509" ondblclick='swap("full509","short509")' style="display:none;">I only browse /c/ occasionally, but I think it is solidly outside the realm of "cute."<br><br>Death is not cute.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('509a','509b');" type="button"></td>
+</tr>
+<tr id="509a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="509b" style="display: none;" bgcolor="#f0d0d0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=505">505</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=509');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=509');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake507" name="507" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=507#507" target="_blank">507</a></td><td><small>12/01&nbsp;02:47</small></td><td title="Kobra"><b>Kobra</b></td><td title=""></td><td><small id="short507" ondblclick='swap("full507","short507")' title="Double-click to show full comment">I don't see why de...</small><small id="full507" ondblclick='swap("full507","short507")' style="display:none;">I don't see why death isn't work safe.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('507a','507b');" type="button"></td>
+</tr>
+<tr id="507a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="507b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=505">505</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=507');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=507');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake506" name="506" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=506#506" target="_blank">506</a></td><td><small>11/30&nbsp;15:06</small></td><td title="kanria"><b>kanria</b></td><td title=""></td><td><small id="short506" ondblclick='swap("full506","short506")' title="Double-click to show full comment">&gt;&gt;498 got it. than...</small><small id="full506" ondblclick='swap("full506","short506")' style="display:none;">&gt;&gt;498<br>got it. thanks, looks good so far. :)</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('506a','506b');" type="button"></td>
+</tr>
+<tr id="506a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="506b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=215">215</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=506');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=506');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake505" name="505" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=505" target="_blank" style="font-weight: bold;">505</a></td><td><small>11/30&nbsp;14:48</small></td><td title="Dr. Stein"><b>Dr. Stein</b></td><td title="&quot;Cute&quot; death">"Cut...</td><td><small id="short505" ondblclick='swap("full505","short505")' title="Double-click to show full comment">Every once in a wh...</small><small id="full505" ondblclick='swap("full505","short505")' style="display:none;">Every
+ once in a while a "cute dead girl" thread pops up on /c/. As the name 
+implies, pictures of dead girls are posted. I know anything extremely 
+bloody is guro and therefore not worksafe, but a lot of the images are 
+"tasteful", where the girls depicted are not mutilated and such. Are 
+these threads not worksafe simply because they depict death? They seem 
+to get an equal amount of sages and bumps, so I am not even sure what 
+/c/'s opinion is. What's yours?</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('505a','505b');" type="button"></td>
+</tr>
+<tr id="505a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3"><b>File (KB)</b></td><td colspan="3">&nbsp;</td></tr><tr id="505b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="http://images.4chan.org/j/src/1164916134566.jpg" target="_blank">1164916134566.jpg</a> (<b>55.99KB</b>)</td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=505');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=505');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Thread options" onclick="popup('admin=opt&amp;id=505');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Replies" onclick="location.href='?thread=505'" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake504" name="504" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=504#504" target="_blank">504</a></td><td><small>11/30&nbsp;14:07</small></td><td title="alternative"><b>alternati...</b></td><td title=""></td><td><small id="short504" ondblclick='swap("full504","short504")' title="Double-click to show full comment">this has already b...</small><small id="full504" ondblclick='swap("full504","short504")' style="display:none;">this has already been addressed in the channel but I figured I'd mention it here too:<br><br>furry stuff is still not allowed on /i/ or anywhere else besides /b/</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('504a','504b');" type="button"></td>
+</tr>
+<tr id="504a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="504b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=477">477</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=504');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=504');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake503" name="503" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=503#503" target="_blank">503</a></td><td><small>11/30&nbsp;14:05</small></td><td title="alternative"><b>alternati...</b></td><td title=""></td><td><small id="short503" ondblclick='swap("full503","short503")' title="Double-click to show full comment">Camera discussion ...</small><small id="full503" ondblclick='swap("full503","short503")' style="display:none;">Camera
+ discussion is not going to be moved to /g/ because thats a horrible 
+idea and /g/ already has a no tech help rule. If things like this are 
+actually a problem we should discuss a rule change in irc.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('503a','503b');" type="button"></td>
+</tr>
+<tr id="503a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="503b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=452">452</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=503');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=503');" type="button"></td></tr><tr bgcolor="#d0d0f0"><td><input id="fake502" name="502" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=502#502" target="_blank">502</a></td><td><small>11/30&nbsp;10:57</small></td><td title="NiGHTS"><b>NiGHTS</b></td><td title=""></td><td><small id="short502" ondblclick='swap("full502","short502")' title="Double-click to show full comment">I agree, a /rs/ wo...</small><small id="full502" ondblclick='swap("full502","short502")' style="display:none;">I agree, a /rs/ would be an excellent idea. As long as it didn't end up being like /r/, which is in the realm of possibility.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('502a','502b');" type="button"></td>
+</tr>
+<tr id="502a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="502b" style="display: none;" bgcolor="#d0d0f0"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=487">487</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=502');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=502');" type="button"></td></tr><tr bgcolor="#f6f6f6"><td><input id="fake500" name="500" value="delete" type="checkbox"></td><td><a href="https://sys.4chan.org/j/imgboard.php?res=500#500" target="_blank">500</a></td><td><small>11/30&nbsp;00:56</small></td><td title="Rawr"><b>Rawr</b></td><td title=""></td><td><small id="short500" ondblclick='swap("full500","short500")' title="Double-click to show full comment">&gt;&gt;483  Also, pleas...</small><small id="full500" ondblclick='swap("full500","short500")' style="display:none;">&gt;&gt;483<br><br>Also,
+ please put in the sticky a link to http://photo.net/learn ...because 
+when /p isn't asking equipment questions, they're asking basic 
+photography questions.<br><br>I do kind of agree about the film camera threads, though some idiot usually posts about film being better than digital.</small></td><td>###.###.###.###</td><td><input value="More" onclick="more('500a','500b');" type="button"></td>
+</tr>
+<tr id="500a" style="display: none;" align="center" bgcolor="#a0c0ff"><td colspan="2">&nbsp;</td><td colspan="3" align="left"><b>Reply to thread</b></td><td colspan="3">&nbsp;</td></tr><tr id="500b" style="display: none;" bgcolor="#f6f6f6"><td colspan="2">&nbsp;</td><td colspan="3"><a href="https://sys.4chan.org/j/admin.php?thread=452">452</a></td><td colspan="3" align="center"><input value="Display all posts by IP" onclick="location.href='?ip=######'" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Delete all posts by IP" onclick="popup('admin=delall&amp;id=500');" type="button">&nbsp;&nbsp;&nbsp;&nbsp;<input value="Ban user" onclick="popup('admin=ban&amp;id=500');" type="button"></td></tr></tbody></table></p><p><input value="Delete" type="submit"> <input value="Reset" type="reset"></p></form>[ Space used: <b>30436</b> KB ]<br><form action="http://j.vyrd.net/j-admin/admin.php" method="POST">
+<input name="mode" value="admin" type="hidden"><input name="admin" value="del" type="hidden"><input name="user" value="########" type="hidden"><input name="pass" value="########" type="hidden">
+<table border="0" cellpadding="2" cellspacing="0" width="%90"><tbody><tr><td>
+<input name="mode" value="admin" type="hidden"><input name="admin" value="del" type="hidden"><input name="user" value="########" type="hidden"><input name="pass" value="########" type="hidden">
+<input name="p" value="35" type="hidden"><input value="&lt;&lt;&lt;" type="submit"></td><td align="right"><form action="http://j.vyrd.net/j/admin.php" method="POST">
+<input name="mode" value="admin" type="hidden"><input name="admin" value="del" type="hidden"><input name="user" value="########" type="hidden"><input name="pass" value="########" type="hidden">
+<input name="p" value="37" type="hidden"><input value="&gt;&gt;&gt;" type="submit"><input name="threadmode" value="" type="hidden"></form></td></tr></tbody></table></form></center><div id="header"><span id="navtop">
+[<a href="http://boards.4chan.org/a/" title="Anime &amp; Manga">a</a> /
+<a href="http://boards.4chan.org/b/" title="Random">b</a> /
+<a href="http://boards.4chan.org/c/" title="Anime/Cute">c</a> /
+<a href="http://boards.4chan.org/d/" title="Hentai/Alternative">d</a> /
+<a href="http://boards.4chan.org/e/" title="Ecchi">e</a> /
+<a href="http://boards.4chan.org/f/" title="Flash">f</a> /
+<a href="http://boards.4chan.org/g/" title="Technology">g</a> /
+<a href="http://boards.4chan.org/gif/" title="Animated GIF">gif</a> /
+<a href="http://boards.4chan.org/h/" title="Hentai">h</a> /
+<a href="http://boards.4chan.org/hr/" title="High Resolution">hr</a> /
+<a href="http://boards.4chan.org/k/" title="Weapons">k</a> /
+<a href="http://boards.4chan.org/m/" title="Mecha">m</a> /
+<a href="http://boards.4chan.org/o/" title="Auto">o</a> /
+<a href="http://boards.4chan.org/p/" title="Photo">p</a> /
+<a href="http://boards.4chan.org/r/" title="Request">r</a> /
+<a href="http://boards.4chan.org/s/" title="Sexy Beautiful Women">s</a> /
+<a href="http://boards.4chan.org/t/" title="Torrents">t</a> /
+<a href="http://boards.4chan.org/u/" title="Yuri">u</a> /
+<a href="http://boards.4chan.org/v/" title="Video Games">v</a> /
+<a href="http://boards.4chan.org/w/" title="Anime/Wallpapers">w</a> /
+<a href="http://boards.4chan.org/wg/" title="Wallpapers/General">wg</a>]
+
+[<a href="http://boards.4chan.org/i/" title="Oekaki">i</a> /
+<a href="http://boards.4chan.org/ic/" title="Artwork/Critique">ic</a>]
+
+[<a href="http://boards.4chan.org/cm/" title="Cute/Male">cm</a> /
+<a href="http://boards.4chan.org/y/" title="Yaoi">y</a>]
+
+[<a href="http://boards.4chan.org/3/" title="3DCG">3</a> /
+<a href="http://boards.4chan.org/adv/" title="Advice">adv</a> /
+<a href="http://boards.4chan.org/an/" title="Animals &amp; Nature">an</a> /
+<a href="http://boards.4chan.org/cgl/" title="Cosplay &amp; EGL">cgl</a> /
+<a href="http://boards.4chan.org/ck/" title="Food &amp; Cooking">ck</a> /
+<a href="http://boards.4chan.org/co/" title="Comics &amp; Cartoons">co</a> /
+<a href="http://boards.4chan.org/fa/" title="Fashion">fa</a> /
+<a href="http://boards.4chan.org/fit/" title="Health &amp; Fitness">fit</a> /
+<a href="http://boards.4chan.org/int/" title="International">int</a> /
+<a href="http://boards.4chan.org/jp/" title="Otaku Culture">jp</a> /
+<a href="http://boards.4chan.org/lit/" title="Literature">lit</a> /
+<a href="http://boards.4chan.org/mu/" title="Music">mu</a> /
+<a href="http://boards.4chan.org/n/" title="Transportation">n</a> /
+<a href="http://boards.4chan.org/po/" title="Papercraft &amp; Origami">po</a> /
+<a href="http://boards.4chan.org/sci/" title="Science &amp; Math">sci</a> /
+<a href="http://boards.4chan.org/soc/" title="Social">soc</a> /
+<a href="http://boards.4chan.org/sp/" title="Sports">sp</a> /
+<a href="http://boards.4chan.org/tg/" title="Traditional Games">tg</a> /
+<a href="http://boards.4chan.org/toy/" title="Toys">toy</a> /
+<a href="http://boards.4chan.org/trv/" title="Travel">trv</a> /
+<a href="http://boards.4chan.org/tv/" title="Television &amp; Film">tv</a> /
+<a href="http://boards.4chan.org/vp/" title="Pokémon">vp</a> /
+<a href="http://boards.4chan.org/x/" title="Paranormal">x</a>]
+
+[<a href="http://rs.4chan.org/" title="Rapidshares">rs</a>]
+
+[<a href="http://status.4chan.org/" title="4chan Status">status</a> /
+<span style="font-size: 90%;"><a href="http://formspring.me/4chan" title="4chan Q&amp;A">?</a></span> /
+<span style="font-size: 90%;"><a href="http://twitter.com/4chan" title="4chan Twitter">@</a></span>]
+
+</span><span id="navtopr">[<a href="http://www.4chan.org/" target="_top">Home</a>]</span></div><br>
+</body></html>
