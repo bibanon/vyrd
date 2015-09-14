@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" media="screen" href="/stylesheets/style.css" />
+		<title>/net/ - Internet Culture</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" id="stylesheet" href="/stylesheets/default.css" />
+	<script type="text/javascript" src="/main.js"></script>	</head>
+<body>
+	<div class="boardlist">[ <a href="/net/index.html">net</a> ]  [ <a href="/">home</a> ]</div>
+			<h1>/net/ - Internet Culture</h1>
+	<div class="title"><p></p></div>
+	
+	<div class="banner">Posting mode: Reply <a class="unimportant" href="/net/index.html">[Return]</a></div>
+	
+	<form name="post" onsubmit="return dopost(this);" enctype="multipart/form-data" action="/post.php" method="post">
+<span style="display:none"><input type="text" name="user" value="NY/nYoz9v/T2BxdPFXl0/" /></span><textarea style="display:none" name="yghhr5xwcl04qvskk4q4">osUgABjC01Ultuums7reximVxPKgA8l23RbmW</textarea><textarea style="display:none" name="message">A/PZTXon</textarea><input type="hidden" name="username" value="" /><input type="hidden" name="text" value="" /><input type="hidden" name="firstname" value="" /><input type="hidden" value="EUnMdUxkLRaMY32SPEFN5pD2ax" name="lastname" /><input type="hidden" value="80" name="3itaop31vxmthn" /><span style="display:none"><input type="text" name="url" value="MmOC9l9Dw" /></span><input type="hidden" name="hash" value="f70aa5a281ebc800b1ddf3c0cf8694bceb0bd545" />
+<input type="hidden" name="thread" value="24" /><input type="hidden" name="board" value="net" />
+	<table>
+		<tr>
+			<th>
+				Name			</th>
+			<td>
+				<input type="text" name="name" size="25" maxlength="50" autocomplete="off" />
+			</td>
+		</tr>		<tr>
+			<th>
+				Email			</th>
+			<td>
+				<input type="text" name="email" size="25" maxlength="40" autocomplete="off" />
+			</td>
+		</tr>		<tr>
+			<th>
+				Subject			</th>
+			<td>
+				<input style="float:left;" type="text" name="subject" size="25" maxlength="100" autocomplete="off" />
+				<input accesskey="s" style="margin-left:2px;" type="submit" name="post" value="New Reply" />			</td>
+		</tr>
+		<tr>
+			<th>
+				Comment			</th>
+			<td>
+				<textarea name="body" id="body" rows="5" cols="35"></textarea>
+			</td>
+		</tr>
+				<tr>
+			<th>
+				File			</th>
+			<td>
+				<input type="file" name="file" />
+			</td>
+		</tr>
+						<tr>
+			<th>
+				Password			</th>
+			<td>
+				<input type="password" name="password" size="12" maxlength="18" autocomplete="off" /> 
+				<span class="unimportant">(For file deletion.)</span>
+			</td>
+		</tr>	</table>
+</form>
+
+<script type="text/javascript">
+	rememberStuff();
+</script>
+	
+		<hr />
+	<form name="postcontrols" action="/post.php" method="post">
+	<input type="hidden" name="board" value="net" />
+		<p class="fileinfo">File: <a href="/net/src/1390928016851.jpg">1390928016851.jpg</a> <span class="unimportant">(102.79 KB, 1279x738, partyvan.jpg)</span></p><a href="/net/src/1390928016851.jpg" target="_blank"><img src="/net/thumb/1390928016851.png" style="width:255px;height:148px" alt="" /></a><div class="post op"><p class="intro" id="24"><input type="checkbox" class="delete" name="delete_24" id="delete_24" /><label for="delete_24"><span class="name">Anonymous</span> <time datetime="2014-01-28T11:53:37">01/28/14 (Tue) 11:53:37</time></label> <a class="post_no" href="/net/res/24.html#24">No.</a><a class="post_no" onclick="citeReply(24);" href="javascript:void(0);">24</a></p><p class="body">back from the dead: irc.partyvan.us</p></div>	<div class="post reply" id="reply_25"><p class="intro" id="25"><input type="checkbox" class="delete" name="delete_25" id="delete_25" /><label for="delete_25"><span class="name">Anonymous</span> <time datetime="2014-01-28T12:52:14">01/28/14 (Tue) 12:52:14</time></label> <a class="post_no" onclick="highlightReply(25)" href="/net/res/24.html#25">No.</a><a class="post_no" onclick="citeReply(25);" href="javascript:void(0);">25</a></p><p class="body"><a onclick="highlightReply('24');" href="/net/res/24.html#24">&gt;&gt;24</a><br/>Really?  According to the headers, that page was last modified last April.  I assume I'm missing something?</p></div><br/>	<div class="post reply" id="reply_26"><p class="intro" id="26"><input type="checkbox" class="delete" name="delete_26" id="delete_26" /><label for="delete_26"><span class="name">Anonymous</span> <time datetime="2014-01-29T04:49:56">01/29/14 (Wed) 04:49:56</time></label> <a class="post_no" onclick="highlightReply(26)" href="/net/res/24.html#26">No.</a><a class="post_no" onclick="citeReply(26);" href="javascript:void(0);">26</a></p><p class="body"><a onclick="highlightReply('25');" href="/net/res/24.html#25">&gt;&gt;25</a><br/>The IRC server is alive</p></div><br/>	<div class="post reply" id="reply_34"><p class="intro" id="34"><input type="checkbox" class="delete" name="delete_34" id="delete_34" /><label for="delete_34"><span class="name">Anonymous</span> <time datetime="2014-04-07T23:43:21">04/07/14 (Mon) 23:43:21</time></label> <a class="post_no" onclick="highlightReply(34)" href="/net/res/24.html#34">No.</a><a class="post_no" onclick="citeReply(34);" href="javascript:void(0);">34</a></p><p class="body">got lost, help</p></div><br/>	<div class="post reply" id="reply_35"><p class="intro" id="35"><input type="checkbox" class="delete" name="delete_35" id="delete_35" /><label for="delete_35"><span class="name">Anonymous</span> <time datetime="2014-04-08T21:26:01">04/08/14 (Tue) 21:26:01</time></label> <a class="post_no" onclick="highlightReply(35)" href="/net/res/24.html#35">No.</a><a class="post_no" onclick="citeReply(35);" href="javascript:void(0);">35</a></p><p class="body"><a onclick="highlightReply('34');" href="/net/res/24.html#34">&gt;&gt;34</a><br/>I'm afraid I don't follow.</p></div><br/><br class="clear"/><hr/>
+	<div class="delete">
+		Delete Post [<input title="Delete file only" type="checkbox" name="file" id="delete_file" />
+		 <label for="delete_file">File</label>] <label for="password">Password</label> 
+			<input id="password" type="password" name="password" size="12" maxlength="18" />
+			<input type="submit" name="delete" value="Delete" />
+	</div>
+	<div class="delete" style="clear:both">
+		<label for="reason">Reason</label> 
+			<input id="reason" type="text" name="reason" size="20" maxlength="30" />
+			<input type="submit" name="report" value="Report" />
+	</div>
+	</form>
+	<a href="/net/index.html">[Return]</a>
+
+	<div class="boardlist bottom">[ <a href="/net/index.html">net</a> ]  [ <a href="/">home</a> ]</div>
+	<p class="unimportant" style="margin-top:20px;text-align:center;">Powered by <a href="http://tinyboard.org/">Tinyboard</a> v0.9.5 | <a href="http://tinyboard.org/">Tinyboard</a> Copyright &copy; 2010-2012 Tinyboard Development Group</p>
+	<p class="unimportant" style="text-align:center;">All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.</p></body>
+</html>
